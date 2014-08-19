@@ -62,7 +62,7 @@ UMM_INBOX_BUTTON_TAKE = "Prendere";
 UMM_INBOX_BUTTON_RETURN = "Ritorna";
 UMM_INBOX_BUTTON_DELETE = "Elimina";
 
-UMM_INBOX_OPTION_1 = "Tutto".;
+UMM_INBOX_OPTION_1 = "Tutto.";
 UMM_INBOX_OPTION_2 = "Elementi.";
 UMM_INBOX_OPTION_3 = "Denaro.";
 UMM_INBOX_OPTION_4 = "Diamanti.";
