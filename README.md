@@ -2,7 +2,7 @@ UltimateMailMod--Continued-
 ===========================
 
 Project site: http://rom.curseforge.com/addons/ultimatemailmod_con2014/
-Repository site: https://github.com/jagodragon/UltimateMailMod--Continued-
+Repository site: https://github.com/jagodragon/UltimateMailMod_2014/
 
 Overview
 ========
