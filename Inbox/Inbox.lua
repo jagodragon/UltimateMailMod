@@ -346,7 +346,7 @@ function UMMInboxToolsTemplate_OnLoad(this)
     getglobal(self:GetName().."TotalDiamonds"):Hide();
     
     self:SetOption(1);
-    getglobal(self:GetName().."CheckTooltipDisplay"):SetChecked(false);								-- release 5.0.1.2550
+    getglobal(self:GetName().."CheckTooltipDisplay"):SetChecked(true);								-- release 5.0.1.2550
     getglobal(self:GetName().."CheckTakeDeleteEmpty"):SetChecked(true);
     getglobal(self:GetName().."ButtonReturn"):Disable();
     getglobal(self:GetName().."ButtonDelete"):Disable();
