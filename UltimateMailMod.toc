@@ -26,6 +26,8 @@ Compose/Compose.lua
 Compose/Compose.xml
 MassSendItems/MassSendItems.lua
 MassSendItems/MassSendItems.xml
+MultiSend/MultiSend.lua
+MultiSend/MultiSend.xml
 Menu/Menu.lua
 Menu/Menu.xml
 UltimateMailMod.xml
