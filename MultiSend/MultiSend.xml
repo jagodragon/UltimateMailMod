@@ -379,7 +379,7 @@
     </Scripts>
   </Frame>
   
-  <Frame name="UMMComposeTemplate" virtual="true">
+  <Frame name="UMMComposeTemplateMultiSend" virtual="true">
     <Size>
       <AbsDimension x="780" y="470" />
     </Size>
@@ -459,10 +459,10 @@
     </Frames>
     <Scripts>
       <OnShow>
-        UMMComposeTemplate_OnShow(this);
+        UMMComposeTemplateMultiSend_OnShow(this);
       </OnShow>
       <OnHide>
-        UMMComposeTemplate_OnHide(this);
+        UMMComposeTemplateMultiSend_OnHide(this);
       </OnHide>
     </Scripts>
   </Frame>

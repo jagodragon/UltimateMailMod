@@ -555,11 +555,11 @@ function UMMMenuTabTemplateMultiSendButton_OnClick(this, action)
   end
 end
 
-function UMMComposeTemplate_OnShow(this)
+function UMMComposeTemplateMultiSend_OnShow(this)
   UMMFriends:Load();
 end
 
-function UMMComposeTemplate_OnHide(this)
+function UMMComposeTemplateMultiSend_OnHide(this)
   getglobal(this:GetName().."Composer"):EnableComposer();
   getglobal(this:GetName().."Composer"):ClearAllEditFocus();
   UMMComposeConfirm:Clear();
