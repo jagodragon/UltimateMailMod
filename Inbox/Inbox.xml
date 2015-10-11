@@ -328,7 +328,7 @@
           </Anchor>
         </Anchors>
       </CheckButton>
-      <CheckButton name="$parentOption5" inherits="UIPanelCheckButtonTemplate">
+      <!-- <CheckButton name="$parentOption5" inherits="UIPanelCheckButtonTemplate">
         <Size>
           <AbsDimension x="22" y="22" />
         </Size>
@@ -339,7 +339,7 @@
             </Offset>
           </Anchor>
         </Anchors>
-      </CheckButton>
+      </CheckButton> -->
       <CheckButton name="$parentCheckTakeDeleteEmpty" inherits="UIPanelCheckButtonTemplate">
         <Size>
           <AbsDimension x="22" y="22" />

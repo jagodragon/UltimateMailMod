@@ -433,9 +433,9 @@ local function priv_AddOres(db)
   db:priv_AddDB("Ores", 201732); -- Rune Obsidian Nugget - 56
   db:priv_AddDB("Ores", 202574); -- Mica Nugget - 61
   db:priv_AddDB("Ores", 208236); -- Olivine Stone - 61
-  db:priv_AddDB("Ores", 240316); -- Purpurroter Achatkristallklumpen - 66
-  db:priv_AddDB("Ores", 241434); -- Olegan Stone Nugget - 69
-  db:priv_AddDB("Ores", 241440); -- Rein Crystal Nugget - 69
+  db:priv_AddDB("Ores", 240316); -- Purpurroter Achatkristallklumpen - 66-- credit Ultak
+  db:priv_AddDB("Ores", 241434); -- Olegan Stone Nugget - 69-- credit Ultak
+  db:priv_AddDB("Ores", 241440); -- Rein Crystal Nugget - 69-- credit Ultak
   db:priv_AddDB("Ores", 242248); -- Silver Star Stone Nugget - 81-- credit Ultak
   db:priv_AddDB("Ores", 242296); -- Ironaxe Stone Nugget - 81-- credit Ultak
   db:priv_AddDB("Ores", 242260); -- Mutation Dust Nugget - 86-- credit Ultak
@@ -570,8 +570,8 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 201782); -- Ancient Spirit Oak Plank
   db:priv_AddDB("Wood", 202616); -- Aeontree Plank - 61
   db:priv_AddDB("Wood", 208243); -- Fastan Banyan Plank - 63
-  db:priv_AddDB("Wood", 240326); -- Janost-Zypressenbrett - 66
-  db:priv_AddDB("Wood", 241429); -- Pinienholzbrett - 69
+  db:priv_AddDB("Wood", 240326); -- Janost-Zypressenbrett - 66-- credit Ultak
+  db:priv_AddDB("Wood", 241429); -- Pinienholzbrett - 69-- credit Ultak
   db:priv_AddDB("Wood", 242245); -- Nadal Wisteria Plank - 81-- credit Ultak
   db:priv_AddDB("Wood", 242293); -- Blood Palm Plank - 81-- credit Ultak
   db:priv_AddDB("Wood", 242257); -- Summer Oak Plank - 86-- credit Ultak

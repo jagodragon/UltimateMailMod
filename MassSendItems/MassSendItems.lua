@@ -660,7 +660,7 @@ function UMMMassSendItemsMarkButtonsTemplate_OnLoad(this)
   
   getglobal(this:GetName().."Label"):SetText("|cff"..UMMColor.White..UMM_MSI_MARK_LABEL.."|r");
   local shiftX = 45;
-  for index = 1, 16 do			-- release 4.0.11.2531
+  for index = 1, 17 do			-- release 4.0.11.2531 -- credit Ultak
     local button = getglobal(this:GetName().."Button"..index);
     button:ClearAllAnchors();
     if (index < 12) then		-- release 4.0.11.2531
