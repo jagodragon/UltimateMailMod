@@ -16,10 +16,10 @@
 -- ¤############################################¤
 
 UMM_VERSION = {
-  Major     = 5,
-  Minor     = 0,
-  Revision  = 3,
-  Build     = 2579;
+  Major     = 6,
+  Minor     = 4,
+  Revision  = 1,
+  Build     = 2753;
 }
 
 -- ##### Local Variables #####

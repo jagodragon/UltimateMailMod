@@ -5,15 +5,38 @@
  #                                                     #
  #  Version: 5.0.9                                     #
  #                                                     #
- #  By Maxeem of Muinin                                #
+ #  By Jagodragon                                      #
+ #                                                     #
+ #     Maxeem of Muinin                                #
  #     maxeem@silverlights-muinin.de                   #
  #                                                     #
- #  Thanks to DJPorterNZ for the DB update             #
+ #  Thanks to Ultak                                    #
  #                                                     #
  #  Credits to:                                        #
  #    Shardea of Siochain (EN/EU)                      #
  #                                                     #
  ¤#####################################################¤
+
+ 
+CHANGELOG:
+
+Version: 6.4.1.2753
+Release date: October 9th 2015
+#  Known issues
+   *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.
+
+#  Changes
+   *  Updated:  Updated Ore/Wood/Herbs/GuildMats buttons. (Credits to Ultak)
+   *  Added:  Improved on the database. (Credits to Ultak)
+   *  Added:  Button and back-end for Bag Stat selection and mailing. (Credits to Ultak)
+ 
+ 
+-------------------------------------------------------
+ 
+ 
+ 
+ 
+
 
 Ultimate Mail Mod is an extension to the existing mail system.
 The original interface is "hidden" and "replaced" by the UMM interface.
