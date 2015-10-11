@@ -1,20 +1,23 @@
 
--- ¤############################################¤
--- ##                                          ##
--- ##  Ultimate Mail Mod (continued)           ##
--- ##                                          ##
--- ##  By: Maxeem of Muinin (DE)               ##
--- ##      maxeem@silverlights-muinin.de       ##
--- ##      www.silverlights-muinin.de          ##
--- ##                                          ##
--- ##  Credits to Shardea of Siochain          ##
--- ##                                          ##
--- ##  Runes of Magic Mail system replacement  ##
--- ##  Offers a more mail minded interface     ##
--- ##  and mass send abilities.                ##
--- ##                                          ##
--- ¤############################################¤
+-- ¤#####################################################¤
+-- #                                                     #
+-- #  Ultimate Mail Mod (continued)                      #
+-- #                                                     #
+-- #  Version: 5.0.9                                     #
+-- #                                                     #
+-- #  By Jagodragon                                      #
+-- #                                                     #
+-- #     Maxeem of Muinin                                #
+-- #     maxeem@silverlights-muinin.de                   #
+-- #                                                     #
+-- #  Thanks to Ultak                                    #
+-- #                                                     #
+-- #  Credits to:                                        #
+-- #    Shardea of Siochain (EN/EU)                      #
+-- #                                                     #
+-- ¤#####################################################¤
 
+ 
 UMM_VERSION = {
   Major     = 6,
   Minor     = 4,
