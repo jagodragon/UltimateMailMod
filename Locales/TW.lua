@@ -80,6 +80,7 @@
 	UMM_MSI_MARKBUTTON14 = "藍配方"; -- Needs review
 	UMM_MSI_MARKBUTTON15 = "紫配方"; -- Needs review
 	UMM_MSI_MARKBUTTON16 = "公會"; -- Needs review
+    UMM_MSI_MARKBUTTON17 = "包統計"; -- 6.4.1.2753
 	UMM_MSI_MARKBUTTON2 = "熔解石"; -- Needs review
 	UMM_MSI_MARKBUTTON3 = "珠寶"; -- Needs review
 	UMM_MSI_MARKBUTTON4 = "礦物"; -- Needs review

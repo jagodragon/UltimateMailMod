@@ -129,6 +129,7 @@ UMM_MSI_MARKBUTTON13                = "Green Rec."; -- release 4.0.11.2531
 UMM_MSI_MARKBUTTON14                = "Blue Rec."; -- release 4.0.11.2531
 UMM_MSI_MARKBUTTON15                = "Magenta Rec."; -- release 4.0.11.2531
 UMM_MSI_MARKBUTTON16                = "Guild"; -- 5.0.0.2545
+UMM_MSI_MARKBUTTON17                = "Bag Stats"; -- 6.4.1.2753
 
 UMM_MSI_MARK_LABEL                  = "Mark:";
 UMM_MSI_MARK_TOOLTIP1               = "Runes";

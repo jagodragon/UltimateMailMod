@@ -130,6 +130,7 @@ UMM_MSI_MARKBUTTON13                = "Grüne Rez.";			-- release 4.0.11.2531
 UMM_MSI_MARKBUTTON14                = "Blaue Rez.";			-- release 4.0.11.2531
 UMM_MSI_MARKBUTTON15                = "Lila Rez.";			-- release 4.0.11.2531
 UMM_MSI_MARKBUTTON16                = "Gilde";				-- release 5.0.0.2545
+UMM_MSI_MARKBUTTON17                = "Bag Stat"; -- 6.4.1.2753
 
 UMM_MSI_MARK_LABEL                  = "Wähle:";
 UMM_MSI_MARK_TOOLTIP1               = "Runen";

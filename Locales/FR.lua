@@ -151,6 +151,8 @@ UMM_MSI_MARKBUTTON15 = "M Recipes";
 
 UMM_MSI_MARKBUTTON16 = "Guild";
 
+UMM_MSI_MARKBUTTON17 = "Sac Stats"; -- 6.4.1.2753
+
 UMM_MSI_MARKBUTTON2 = "Pierre de Fusion";
 
 UMM_MSI_MARKBUTTON3 = "Bijoux";

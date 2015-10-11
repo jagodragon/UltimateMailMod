@@ -129,6 +129,7 @@ UMM_MSI_MARKBUTTON13                = "Ziel. Rec."; -- release 4.0.11.2531
 UMM_MSI_MARKBUTTON14                = "Nieb. Rec."; -- release 4.0.11.2531
 UMM_MSI_MARKBUTTON15                = "Fiol. Rec."; -- release 4.0.11.2531
 UMM_MSI_MARKBUTTON16                = "Gildia"; -- 5.0.0.2545
+UMM_MSI_MARKBUTTON17                = "torba Statystyki"; -- 6.4.1.2753
 
 UMM_MSI_MARK_LABEL                  = "Oznacz:";
 UMM_MSI_MARK_TOOLTIP1               = "Runy";

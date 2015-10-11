@@ -80,6 +80,7 @@ UMM_MSI_MARKBUTTON13 = "Рецепты (з.)"; -- Needs review
 UMM_MSI_MARKBUTTON14 = "Рецепты (с.)"; -- Needs review
 UMM_MSI_MARKBUTTON15 = "Рецепты (ф.)"; -- Needs review
 UMM_MSI_MARKBUTTON16 = "Гильдия"; -- Needs review
+UMM_MSI_MARKBUTTON17 = "Сумка Статистика"; -- 6.4.1.2753
 UMM_MSI_MARKBUTTON2 = "К. маны"; -- Needs review
 UMM_MSI_MARKBUTTON3 = "Точки"; -- Needs review
 UMM_MSI_MARKBUTTON4 = "Руда"; -- Needs review

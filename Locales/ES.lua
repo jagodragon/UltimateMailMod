@@ -151,6 +151,8 @@ UMM_MSI_MARKBUTTON15 = "Recetas moradas";
 
 UMM_MSI_MARKBUTTON16 = "Gremio";
 
+UMM_MSI_MARKBUTTON17 = "Bolsa Stats"; -- 6.4.1.2753
+
 UMM_MSI_MARKBUTTON2 = "Piedras de fusi\\195\\179n";
 
 UMM_MSI_MARKBUTTON3 = "Gemas";
