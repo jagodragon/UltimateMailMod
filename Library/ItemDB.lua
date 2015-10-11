@@ -19,13 +19,16 @@ local ResourceItemFilter = {
     if (self.ItemDB[type]) then
       local itemkind, itemData, itemName = ParseHyperlink(itemLink);
       local _, _, itemID = string.find(itemData, "^(%x+)");
-      itemID = tonumber(itemID, 16);
+      itemID = tonumber(itemID, 17); --Why is this 16 and not 17? (because you added bagstat)
       if (self.ItemDB[type][itemID]) then
+        --DEFAULT_CHAT_FRAME:AddMessage("1");
         return true;
       else
+        --DEFAULT_CHAT_FRAME:AddMessage("2");
         return nil;
       end
     else
+        --DEFAULT_CHAT_FRAME:AddMessage("0");
       return nil;
     end
   end;
@@ -64,6 +67,8 @@ local ResourceItemFilter = {
       result = "MRecipes";		-- release 5.0.1.2553
     elseif (id == 16) then
       result = "Guild";			-- release 5.0.0.2545
+    elseif (id == 17) then    
+      result = "BagStat";       -- release 6.4.1.2752
     end
     return result;
   end;
@@ -375,8 +380,13 @@ local function priv_AddOres(db)
   db:priv_AddDB("Ores", 202588); -- Tempered Mica Ingot - 61
   db:priv_AddDB("Ores", 208238); -- Tempered Olivine Ingot - 61
   db:priv_AddDB("Ores", 240318); -- Tempered Purple Agate Crystal Ingot - 66
-  db:priv_AddDB("Ores", 241436); -- Gehärteter Olegansteinbarren - 69
-  db:priv_AddDB("Ores", 241442); -- Gehärteter Zügelkristallbarren - 69
+  db:priv_AddDB("Ores", 241436); -- Olegan Stone Ingot - 69
+  db:priv_AddDB("Ores", 241442); -- Rein Crystal Ingot - 69
+  --// Error? with db:priv_AddDB("Ores", 242250); -- Silver Star Stone Ingot - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242298); -- Ironaxe Stone Ingot - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242261); -- Mutation Dust Ingot - 86-- credit Ultak
+  db:priv_AddDB("Ores", 242273); -- Rainbow Stone Ingot - 91-- credit Ultak
+  db:priv_AddDB("Ores", 242307); -- Sea Crystal Ingot - 91-- credit Ultak
   -- Purple
   db:priv_AddDB("Ores", 201744); -- Abyss-Mercury Ingot
   db:priv_AddDB("Ores", 201739); -- Copper Ingot
@@ -398,7 +408,12 @@ local function priv_AddOres(db)
   db:priv_AddDB("Ores", 202581); -- Mica Ingot - 61
   db:priv_AddDB("Ores", 240317); -- Purple Agate Crystal Ingot - 66
   db:priv_AddDB("Ores", 241435); -- Olegansteinbarren - 69
-  db:priv_AddDB("Ores", 241441); -- Zügelkristallbarren - 69
+  db:priv_AddDB("Ores", 241441); -- Rein Crystal Ingot - 69
+  db:priv_AddDB("Ores", 242249); -- Silver Star Stone Ingot - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242297); -- Ironaxe Stone Ingot - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242261); -- Mutation Dust Ingot - 86-- credit Ultak
+  db:priv_AddDB("Ores", 242273); -- Rainbow Stone Ingot - 91-- credit Ultak
+  db:priv_AddDB("Ores", 242307); -- Sea Crystal Ingot - 91-- credit Ultak
   -- Blue
   db:priv_AddDB("Ores", 201731); -- Abyss-Mercury Nugget
   db:priv_AddDB("Ores", 201726); -- Copper Nugget
@@ -419,8 +434,13 @@ local function priv_AddOres(db)
   db:priv_AddDB("Ores", 202574); -- Mica Nugget - 61
   db:priv_AddDB("Ores", 208236); -- Olivine Stone - 61
   db:priv_AddDB("Ores", 240316); -- Purpurroter Achatkristallklumpen - 66
-  db:priv_AddDB("Ores", 241434); -- Olegansteinfragment - 69
-  db:priv_AddDB("Ores", 241440); -- Zügelkristallfragment - 69
+  db:priv_AddDB("Ores", 241434); -- Olegan Stone Nugget - 69
+  db:priv_AddDB("Ores", 241440); -- Rein Crystal Nugget - 69
+  db:priv_AddDB("Ores", 242248); -- Silver Star Stone Nugget - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242296); -- Ironaxe Stone Nugget - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242260); -- Mutation Dust Nugget - 86-- credit Ultak
+  db:priv_AddDB("Ores", 242272); -- Rainbow Stone Nugget - 91-- credit Ultak
+  db:priv_AddDB("Ores", 242306); -- Sea Crystal Nugget - 91-- credit Ultak
   -- Green
   db:priv_AddDB("Ores", 201720); -- Abyss-Mercury Sand
   db:priv_AddDB("Ores", 201714); -- Copper Sand
@@ -441,8 +461,13 @@ local function priv_AddOres(db)
   db:priv_AddDB("Ores", 202567); -- Mica Sand - 61
   db:priv_AddDB("Ores", 208235); -- Olivine Sand - 61
   db:priv_AddDB("Ores", 240315); -- Purpurroter Achatkristallsand - 66
-  db:priv_AddDB("Ores", 241433); -- Olegansteinsand - 69
-  db:priv_AddDB("Ores", 241439); -- Zügelkristallsand - 69
+  db:priv_AddDB("Ores", 241433); -- Olegan Stone Sand - 69
+  db:priv_AddDB("Ores", 241439); -- Rein Crystal Sand - 69
+  db:priv_AddDB("Ores", 242247); -- Silver Star Stone Sand - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242295); -- Ironaxe Stone Sand - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242259); -- Mutation Dust Sand - 86-- credit Ultak
+  db:priv_AddDB("Ores", 242271); -- Rainbow Stone Sand - 91-- credit Ultak
+  db:priv_AddDB("Ores", 242305); -- Sea Crystal Sand - 91-- credit Ultak
   -- White
   db:priv_AddDB("Ores", 200264); -- Abyss-Mercury
   db:priv_AddDB("Ores", 200236); -- Copper Ore
@@ -463,8 +488,14 @@ local function priv_AddOres(db)
   db:priv_AddDB("Ores", 202316); -- Mica - 61
   db:priv_AddDB("Ores", 208234); -- Olivine - 61
   db:priv_AddDB("Ores", 240314); -- Purpurroter Achatkristall - 66
-  db:priv_AddDB("Ores", 241432); -- Oleganstein - 69
-  db:priv_AddDB("Ores", 241438); -- Zügelkristall - 69
+  db:priv_AddDB("Ores", 241432); -- Olegan Stone - 69
+  db:priv_AddDB("Ores", 241438); -- Rein Crystal - 69
+  db:priv_AddDB("Ores", 242246); -- Silver Star Stone - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242294); -- Ironaxe Stone - 81-- credit Ultak
+  db:priv_AddDB("Ores", 242258); -- Mutation Dust - 86-- credit Ultak
+  db:priv_AddDB("Ores", 242270); -- Rainbow Stone - 91-- credit Ultak
+  db:priv_AddDB("Ores", 242306); -- Sea Crystal - 91-- credit Ultak
+  
 end
 
 local function priv_AddWood(db)
@@ -487,8 +518,13 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 201771); -- Exquisite Ancient Spirit Oak Wood Plank - 56
   db:priv_AddDB("Wood", 202630); -- Exquisite Aeontree Plank - 61
   db:priv_AddDB("Wood", 208245); -- Exquisite Fastan Banyan Plank - 63
-  db:priv_AddDB("Wood", 240328); -- Exquisites Janost-Zypressenbrett - 69
-  db:priv_AddDB("Wood", 241431); -- Exquisites Pinienholzbrett - 69
+  db:priv_AddDB("Wood", 240328); -- Exquisite Janost-Cypress Plank - 69
+  db:priv_AddDB("Wood", 241431); -- Exquisite Stone Pine Plank - 71-- credit Ultak
+  db:priv_AddDB("Wood", 242247); -- Exquisite Nadal Wisteria Plank - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242296); -- Exquisite Blood Palm Plank - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242259); -- Exquisite Summer Oak Plank - 86-- credit Ultak
+  db:priv_AddDB("Wood", 242271); -- Exquisite Fire Mountain Tree Plank - 91-- credit Ultak
+  db:priv_AddDB("Wood", 242307); -- Exquisite Bleak Fir Plank - 91-- credit Ultak
   -- Orange
   db:priv_AddDB("Wood", 200294); -- Refined Ash Plank
   db:priv_AddDB("Wood", 202617); -- Refined Chime Wood Plank
@@ -508,8 +544,13 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 200319); -- Refined Ancient Spirit Oak Plank
   db:priv_AddDB("Wood", 202623); -- Refined Aeontree Plank - 61
   db:priv_AddDB("Wood", 208244); -- Refined Fastan Banyan Plank - 63
-  db:priv_AddDB("Wood", 240327); -- Gehobeltes Janost-Zypressenbrett - 69
-  db:priv_AddDB("Wood", 241430); -- Gehobeltes Pinienholzbrett - 69
+  db:priv_AddDB("Wood", 240327); -- Refined Janost-Cypress Plank - 66
+  db:priv_AddDB("Wood", 241430); -- Refined Stone Pine Plank - 71
+  db:priv_AddDB("Wood", 242246); -- Refined Nadal Wisteria Plank - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242294); -- Refined Blood Palm Plank - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242258); -- Refined Summer Oak Plank - 86-- credit Ultak
+  db:priv_AddDB("Wood", 242270); -- Refined Fire Mountain Tree Plank - 91-- credit Ultak
+  db:priv_AddDB("Wood", 242306); -- Refined Bleak Fir Plank - 91-- credit Ultak
   -- Purple
   db:priv_AddDB("Wood", 201773); -- Ash Plank
   db:priv_AddDB("Wood", 202610); -- Chime Wood Plank
@@ -531,6 +572,11 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 208243); -- Fastan Banyan Plank - 63
   db:priv_AddDB("Wood", 240326); -- Janost-Zypressenbrett - 66
   db:priv_AddDB("Wood", 241429); -- Pinienholzbrett - 69
+  db:priv_AddDB("Wood", 242245); -- Nadal Wisteria Plank - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242293); -- Blood Palm Plank - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242257); -- Summer Oak Plank - 86-- credit Ultak
+  db:priv_AddDB("Wood", 242269); -- Fire Mountain Tree Plank - 91-- credit Ultak
+  db:priv_AddDB("Wood", 242305); -- Bleak Fir Plank - 91-- credit Ultak
   -- Blue
   db:priv_AddDB("Wood", 201761); -- Ash Lumber
   db:priv_AddDB("Wood", 202603); -- Chime Wood Lumber
@@ -550,8 +596,13 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 201770); -- Ancient Spirit Oak Lumber
   db:priv_AddDB("Wood", 202609); -- Aeontree Lumber - 61
   db:priv_AddDB("Wood", 208242); -- Fastan Banyan Lumber - 63
-  db:priv_AddDB("Wood", 240325); -- Janost-Zypressenbauholz - 69
-  db:priv_AddDB("Wood", 241428); -- Pinienholz - 69
+  db:priv_AddDB("Wood", 240325); -- Janost-Cypress Lumber - 66
+  db:priv_AddDB("Wood", 241428); -- Stone Pine Lumber - 71-- credit Ultak
+  db:priv_AddDB("Wood", 242244); -- Nadal Wisteria Lumber - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242292); -- Blood Palm Lumber - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242256); -- Summer Oak Lumber - 86-- credit Ultak
+  db:priv_AddDB("Wood", 242268); -- Fire Mountain Tree Lumber - 91-- credit Ultak
+  db:priv_AddDB("Wood", 242304); -- Bleak Fir Lumber - 91-- credit Ultak
   -- Green
   db:priv_AddDB("Wood", 201749); -- Ash Timber - 1
   db:priv_AddDB("Wood", 202596); -- Chime Wood Timber - 1
@@ -571,8 +622,13 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 201760); -- Ancient Spirit Oak Timber - 56
   db:priv_AddDB("Wood", 202602); -- Aeontree Timber - 61
   db:priv_AddDB("Wood", 208241); -- Fastan Banyan Timber - 63
-  db:priv_AddDB("Wood", 240324); -- Janost-Zypressennutzholz - 69
-  db:priv_AddDB("Wood", 241427); -- Pinienrohholz - 69
+  db:priv_AddDB("Wood", 240324); -- Janost-Cypress Timber - 66
+  db:priv_AddDB("Wood", 241427); -- Stone Pine Timber - 71-- credit Ultak
+  db:priv_AddDB("Wood", 242243); -- Nadal Wisteria Timber - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242291); -- Blood Palm Timber - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242255); -- Summer Oak Timber - 86-- credit Ultak
+  db:priv_AddDB("Wood", 242267); -- Fire Mountain Tree Timber - 91-- credit Ultak
+  db:priv_AddDB("Wood", 242303); -- Bleak Fir Timber - 91-- credit Ultak
   -- White
   db:priv_AddDB("Wood", 200293); -- Ash Wood - 1
   db:priv_AddDB("Wood", 200508); -- Chime Wood - 1
@@ -592,8 +648,13 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 200312); -- Ancient Spirit Oak Wood - 56
   db:priv_AddDB("Wood", 202318); -- Aeontree Wood - 61
   db:priv_AddDB("Wood", 208240); -- Fastan Banyan - 63
-  db:priv_AddDB("Wood", 240323); -- Janost-Zypressenholz - 69
-  db:priv_AddDB("Wood", 241426); -- Pinie - 69
+  db:priv_AddDB("Wood", 240323); -- Janost-Cypress Wood - 66
+  db:priv_AddDB("Wood", 241426); -- Stone Pine Wood - 71-- credit Ultak
+  db:priv_AddDB("Wood", 242242); -- Nadal Wisteria Wood - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242290); -- Blood Palm Wood - 81-- credit Ultak
+  db:priv_AddDB("Wood", 242254); -- Summer Oak Wood - 86-- credit Ultak
+  db:priv_AddDB("Wood", 242266); -- Fire Mountain Tree Wood - 91-- credit Ultak
+  db:priv_AddDB("Wood", 242302); -- Bleak Fir Wood - 91-- credit Ultak
 end
 
 local function priv_AddHerbs(db)
@@ -616,8 +677,14 @@ local function priv_AddHerbs(db)
   db:priv_AddDB("Herbs", 201811); -- Thorn Apple Essence - 56
   db:priv_AddDB("Herbs", 202665); -- Goblin Grass Essence - 61
   db:priv_AddDB("Herbs", 208251); -- Verbena Essence - 63
-  db:priv_AddDB("Herbs", 241413); -- Donnerhufgrasessenz - 69
-  db:priv_AddDB("Herbs", 241419); -- Schwalbenschwanzblumenessenz - 69
+  db:priv_AddDB("Herbs", 240334); -- Nocturnal Lantern Grass Essence - 66
+  db:priv_AddDB("Herbs", 241419); -- Dovetail Flower Essence - 71-- credit Ultak
+  db:priv_AddDB("Herbs", 241413); -- Thunderhoof Grass Essence - 66-- credit Ultak
+  db:priv_AddDB("Herbs", 242255); -- Isyeh Grass Essence - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242303); -- Dragonsprout Grass Essence - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242267); -- Cold Psilotum Essence - 86-- credit Ultak
+  db:priv_AddDB("Herbs", 242279); -- Snow Grass Essence - 91-- credit Ultak
+  db:priv_AddDB("Herbs", 242315); -- Moon Grass Essence - 91-- credit Ultak
   -- Orange
   db:priv_AddDB("Herbs", 200344); -- Pure Barsleaf Extract
   db:priv_AddDB("Herbs", 200337); -- Pure Beetroot Extract
@@ -637,8 +704,14 @@ local function priv_AddHerbs(db)
   db:priv_AddDB("Herbs", 200364); -- Pure Thorn Apple Extract - 56
   db:priv_AddDB("Herbs", 202658); -- Pure Goblin Grass Extract - 61
   db:priv_AddDB("Herbs", 208250); -- Pure Verbena Extract - 63
-  db:priv_AddDB("Herbs", 241412); -- Reiner Donnerhufgrasextrakt - 69
-  db:priv_AddDB("Herbs", 241418); -- Reiner Schwalbenschwanzblumenextrakt - 69
+  db:priv_AddDB("Herbs", 240333); -- Pure Nocturnal Lantern Grass - 66
+  db:priv_AddDB("Herbs", 241418); -- Pure Dovetail Flower - 71-- credit Ultak
+  db:priv_AddDB("Herbs", 241412); -- Pure Thunderhoof Grass - 75-- credit Ultak
+  db:priv_AddDB("Herbs", 242254); -- Pure Isyeh Grass - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242302); -- Pure Dragonsprout Grass - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242266); -- Pure Cold Psilotum - 86-- credit Ultak
+  db:priv_AddDB("Herbs", 242278); -- Pure Snow Grass - 91-- credit Ultak
+  db:priv_AddDB("Herbs", 242314); -- Pure Moon Grass - 91-- credit Ultak
   -- Purple
   db:priv_AddDB("Herbs", 201818); -- Barsleaf Extract
   db:priv_AddDB("Herbs", 201814); -- Beetroot Extract
@@ -658,8 +731,14 @@ local function priv_AddHerbs(db)
   db:priv_AddDB("Herbs", 201822); -- Thorn Apple Extract - 56
   db:priv_AddDB("Herbs", 202651); -- Goblin Grass Extract - 61
   db:priv_AddDB("Herbs", 208249); -- Verbena Extract - 63
-  db:priv_AddDB("Herbs", 241411); -- Donnerhufgrasextrakt - 69
-  db:priv_AddDB("Herbs", 241417); -- Schwalbenschwanzblumenextrakt - 69
+  db:priv_AddDB("Herbs", 240332); -- Nocturnal Lantern Grass Extract - 66
+  db:priv_AddDB("Herbs", 241417); -- Dovetail Flower Extract - 71
+  db:priv_AddDB("Herbs", 241411); -- Tuhnderhoof Grass Extract - 75-- credit Ultak
+  db:priv_AddDB("Herbs", 242253); -- Isyeh Grass Extract - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242301); -- Dragonsprout Grass Extract - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242265); -- Cold Psilotum Extract - 86-- credit Ultak
+  db:priv_AddDB("Herbs", 242277); -- Snow Grass Extract - 91-- credit Ultak
+  db:priv_AddDB("Herbs", 242313); -- Moon Grass Extract - 91-- credit Ultak
   -- Blue
   db:priv_AddDB("Herbs", 201804); -- Barsleaf Sap
   db:priv_AddDB("Herbs", 201800); -- Beetroot Sap
@@ -679,8 +758,14 @@ local function priv_AddHerbs(db)
   db:priv_AddDB("Herbs", 201808); -- Thorn Apple Juice - 56
   db:priv_AddDB("Herbs", 202644); -- Goblin Grass Sap - 61
   db:priv_AddDB("Herbs", 208248); -- Verbena Juice - 63
-  db:priv_AddDB("Herbs", 241410); -- Donnerhufgrassaft - 69
-  db:priv_AddDB("Herbs", 241416); -- Schwalbenschwanzblumensaft - 69
+  db:priv_AddDB("Herbs", 240331); -- Nocturnal Lantern Grass Sap - 66
+  db:priv_AddDB("Herbs", 241416); -- Dovetail Flower Sap - 71
+  db:priv_AddDB("Herbs", 241410); -- Thunderhoof Sap - 75-- credit Ultak
+  db:priv_AddDB("Herbs", 242252); -- Isyeh Grass Sap - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242300); -- Dragonsprout Grass Sap - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242264); -- Cold Psilotum Sap - 86-- credit Ultak
+  db:priv_AddDB("Herbs", 242276); -- Snow Grass Sap - 91-- credit Ultak
+  db:priv_AddDB("Herbs", 242312); -- Moon Grass Sap - 91-- credit Ultak
   -- Green
   db:priv_AddDB("Herbs", 201792); -- Barsleaf Bundle
   db:priv_AddDB("Herbs", 201786); -- Beetroot Bundle
@@ -700,8 +785,14 @@ local function priv_AddHerbs(db)
   db:priv_AddDB("Herbs", 201798); -- Thorn Apple Bundle - 56
   db:priv_AddDB("Herbs", 202637); -- Goblin Grass Bundle - 61
   db:priv_AddDB("Herbs", 208247); -- Bouquet of Verbena - 63
-  db:priv_AddDB("Herbs", 241409); -- Donnerhufgrasbündel - 69
-  db:priv_AddDB("Herbs", 241415); -- Schwalbenschwanzblumenstrauß - 69
+  db:priv_AddDB("Herbs", 240330); -- Nocturnal Lantern Grass Bundle - 66
+  db:priv_AddDB("Herbs", 241415); -- Dovetail Flower Bundle - 71
+  db:priv_AddDB("Herbs", 241409); -- Thunderhoof Grass Bundle - 75-- credit Ultak
+  db:priv_AddDB("Herbs", 242251); -- Isyeh Grass Bundle - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242299); -- Dragonsprout Grass Bundle - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242263); -- Cold Psilotum Bundle - 86-- credit Ultak
+  db:priv_AddDB("Herbs", 242275); -- Snow Grass Bundle - 91-- credit Ultak
+  db:priv_AddDB("Herbs", 242311); -- Moon Grass Bundle - 91-- credit Ultak
   -- White
   db:priv_AddDB("Herbs", 200342); -- Barsleaf
   db:priv_AddDB("Herbs", 200334); -- Beetroot
@@ -721,8 +812,14 @@ local function priv_AddHerbs(db)
   db:priv_AddDB("Herbs", 200350); -- Thorn Apple - 56
   db:priv_AddDB("Herbs", 202558); -- Goblin Grass - 61
   db:priv_AddDB("Herbs", 208246); -- Verbena - 63
-  db:priv_AddDB("Herbs", 241408); -- Donnerhufgras - 69
-  db:priv_AddDB("Herbs", 241414); -- Schwalbenschwanzblume - 69
+  db:priv_AddDB("Herbs", 240329); -- Nocturnal Lantern Grass - 66
+  db:priv_AddDB("Herbs", 241414); -- Dovetail Flower - 71-- credit Ultak
+  db:priv_AddDB("Herbs", 241408); -- Thunderhoof Grass - 75-- credit Ultak
+  db:priv_AddDB("Herbs", 242250); -- Isyeh Grass - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242298); -- Dragonsprout Grass - 81-- credit Ultak
+  db:priv_AddDB("Herbs", 242262); -- Cold Psilotum - 86-- credit Ultak
+  db:priv_AddDB("Herbs", 242274); -- Snow Grass - 91-- credit Ultak
+  db:priv_AddDB("Herbs", 242310); -- Moon Grass - 91-- credit Ultak
 end
 
 local function priv_AddRawMaterials(db)
@@ -1735,6 +1832,54 @@ local function priv_AddGuildContribution(db) -- 5.0.0.2545
   db:priv_AddDB("Guild", 206695); -- Ore Essence
   db:priv_AddDB("Guild", 206696); -- Wood Essence
   db:priv_AddDB("Guild", 206697); -- Herb Essence
+  
+  --Andor Materials-- credit Ultak
+  db:priv_AddDB("Guild", 207326); -- Nightmare Essence - 100 Guild Runes
+  db:priv_AddDB("Guild", 207330); -- Wisdom Core - 100 Guild Stones
+  db:priv_AddDB("Guild", 207930); -- Teardrop Ruby - 100 Guild Rubies
+  db:priv_AddDB("Guild", 206592); -- Moonlight Pearl - 100 Guild Ore
+  db:priv_AddDB("Guild", 206591); -- Sunset Ear of Grain - 100 Guild Wood
+  db:priv_AddDB("Guild", 206590); -- Magic Fortune Grass - 100 Guild Herb
+end;
+
+local function priv_AddBagStats(db) -- 6.4.1.2752  -- credit Ultak
+
+  db:priv_AddDB("BagStat", 233989); -- Splitwater Earring - 92
+  db:priv_AddDB("BagStat", 233988); -- Splitwater Ring - 92
+  db:priv_AddDB("BagStat", 233987); -- Splitwater Necklace - 92
+
+  db:priv_AddDB("BagStat", 233685); -- Ash Earring - 92
+  db:priv_AddDB("BagStat", 233684); -- Ash Ring - 92
+  db:priv_AddDB("BagStat", 233683); -- Ash Necklace - 92
+  
+  db:priv_AddDB("BagStat", 233243); -- Earring of the Basin - 90
+  db:priv_AddDB("BagStat", 233242); -- Ring of the Basin - 90
+  db:priv_AddDB("BagStat", 233241); -- Necklace of the Basin - 90
+  
+  db:priv_AddDB("BagStat", 232755); -- Jungle Earring - 87
+  db:priv_AddDB("BagStat", 232754); -- Jungle Ring - 87
+  db:priv_AddDB("BagStat", 232753); -- Jungle Necklace - 87
+  
+  db:priv_AddDB("BagStat", 228879); -- Fjord Earring - 85
+  db:priv_AddDB("BagStat", 228750); -- Fjord Ring - 85
+  db:priv_AddDB("BagStat", 224991); -- Fjord Necklace - 85
+  
+  db:priv_AddDB("BagStat", 231926); -- Kingdom Earring - 82
+  db:priv_AddDB("BagStat", 231925); -- Kingdom Ring - 82
+  db:priv_AddDB("BagStat", 231924); -- Kingdom Necklace - 82
+  
+  db:priv_AddDB("BagStat", 231923); -- Water Fire Earring - 80
+  db:priv_AddDB("BagStat", 231922); -- Water Fire Ring - 80
+  db:priv_AddDB("BagStat", 231921); -- Water Fire Necklace - 80
+  
+  --db:priv_AddDB("BagStat", ); --  - 77
+  --db:priv_AddDB("BagStat", ); --  - 77
+  --db:priv_AddDB("BagStat", ); --  - 77
+  
+  db:priv_AddDB("BagStat", 229699); -- Balanced Earring - 75
+  db:priv_AddDB("BagStat", 229700); -- Balanced Ring - 75
+  db:priv_AddDB("BagStat", 229698); -- Balanced Necklace - 75
+  
 end;
 
 UMMItemDB = ResourceItemFilter;
@@ -1754,6 +1899,9 @@ priv_AddWood(UMMItemDB);
 priv_AddHerbs(UMMItemDB);
 priv_AddRawMaterials(UMMItemDB);
 priv_AddProductionRunes(UMMItemDB);
+
+--Gear  credit Ultak
+priv_AddBagStats(UMMItemDB); -- 6.4.1.2752 -- credit Ultak
 
 -- Equipment Enchancements
 priv_AddJuwels(UMMItemDB);
