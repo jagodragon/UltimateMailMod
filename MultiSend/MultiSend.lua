@@ -525,7 +525,7 @@ function UMMComposeMailTemplateMultiSend_OnHide(this)
   this:ClearAllEditFocus();
 end
 
-function UMMMenuTabTemplateMultiSendButton_OnClick(this, action)
+function UMMComposeMailTemplateButtonMultiSend_OnClick(this, action)
   if (string.lower(action) == "reset") then
     this:GetParent():ClearMail();
   elseif (string.lower(action) == "send") then
