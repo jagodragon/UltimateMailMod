@@ -20,7 +20,7 @@
  
 CHANGELOG:
 
-Version: 6.4.1.2753
+Version: 6.4.1.2752.001
 Release date: October 9th 2015
 #  Known issues
    *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.

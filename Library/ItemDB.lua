@@ -19,7 +19,7 @@ local ResourceItemFilter = {
     if (self.ItemDB[type]) then
       local itemkind, itemData, itemName = ParseHyperlink(itemLink);
       local _, _, itemID = string.find(itemData, "^(%x+)");
-      itemID = tonumber(itemID, 17); --Why is this 16 and not 17? (because you added bagstat Ultak)
+      itemID = tonumber(itemID, 16); --max item id is 16 characters long
       if (self.ItemDB[type][itemID]) then
         --DEFAULT_CHAT_FRAME:AddMessage("1");
         return true;

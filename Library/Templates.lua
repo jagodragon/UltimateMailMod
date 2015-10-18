@@ -52,7 +52,7 @@ UMMNormalBar = {
   Init = function(self)
     if (not self.priv_Initialized) then
       getglobal("UMMFrameSettingAudioAlertLabel"):SetText("|cff"..UMMColor.Medium..UMM_SETTINGS_AUDIOWARNING.."|r");
-      getglobal("UMMFrameModVersion"):SetText("|cff"..UMMColor.Header.."v"..UMM_VERSION.Major.."."..UMM_VERSION.Minor.."."..UMM_VERSION.Revision.." ("..UMM_VERSION.Build..")|r");
+      getglobal("UMMFrameModVersion"):SetText("|cff"..UMMColor.Header.."v"..UMM_VERSION.Major.."."..UMM_VERSION.Minor.."."..UMM_VERSION.Revision.." ("..UMM_VERSION.Build..")."..UMM_VERSION.ummRev.."|r");
       self.priv_Initialized = true;
     end
   end;

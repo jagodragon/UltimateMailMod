@@ -22,7 +22,8 @@ UMM_VERSION = {
   Major     = 6,
   Minor     = 4,
   Revision  = 1,
-  Build     = 2753;
+  Build     = 2753,
+  ummRev    = 2;
 }
 
 -- ##### Local Variables #####
@@ -119,7 +120,7 @@ function UMMMasterFrame_OnEvent(event, arg1, arg2, arg3, arg4)
     if (AddonManager) then
       -- Skip displaying the prompt for those running AddonManager
     else
-      UMMPrompt(UMM_TITLE.." v"..UMM_VERSION.Major.."."..UMM_VERSION.Minor.."."..UMM_VERSION.Revision.." ("..UMM_VERSION.Build..")"..UMM_LOADED);
+      UMMPrompt(UMM_TITLE.." v"..UMM_VERSION.Major.."."..UMM_VERSION.Minor.."."..UMM_VERSION.Revision.." ("..UMM_VERSION.Build..")."..UMM_VERSION.ummRev..""..UMM_LOADED);
     end
   end
   if (event == "LOADING_END") then

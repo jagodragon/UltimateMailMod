@@ -147,7 +147,7 @@
         <Frames>
           <EditBox name="$parentInput" inherits="UIMultiEditBoxTemplate" letters="5000" >
             <Size>
-              <AbsDimension x="295" y="280"/>
+              <AbsDimension x="295" y="325"/>
             </Size>
             <Anchors>
               <Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
@@ -169,7 +169,7 @@
         </Frames>
       </Frame>
       <!-- Footer frame for attachments -->
-      <!-- <Frame name="$parentFooter" inherits="UMMBackdropTemplate" hidden="false">
+      <Frame name="$parentFooter" inherits="UMMBackdropTemplate" hidden="false">
         <Size>
           <AbsDimension x="330" y="85" />
         </Size>
@@ -180,7 +180,7 @@
             </Offset>
           </Anchor>
         </Anchors>
-        <Layers>
+        <!-- <Layers>
           <Layer level="ARTWORK">
             <FontString name="$parentAttachmentLabel" inherits="GameTitleFont" text="">
               <Anchors>
@@ -363,8 +363,8 @@
             <FontString inherits="NumberFontNormal" spacing="1"/>
           </EditBox>
 
-        </Frames>
-      </Frame> -->
+        </Frames>-->
+      </Frame>
     </Frames>
     <Scripts>
       <OnLoad>
@@ -386,7 +386,7 @@
     <Anchors>
       <Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
         <Offset>
-          <AbsDimension x="0" y="0"/>
+          <AbsDimension x="5" y="5"/>
         </Offset>
       </Anchor>
     </Anchors>
