@@ -1,29 +1,28 @@
 
--- ¤#####################################################¤
--- #                                                     #
--- #  Ultimate Mail Mod (continued)                      #
--- #                                                     #
--- #  Version: 5.0.9                                     #
--- #                                                     #
--- #  By Jagodragon                                      #
--- #                                                     #
--- #     Maxeem of Muinin                                #
--- #     maxeem@silverlights-muinin.de                   #
--- #                                                     #
--- #  Thanks to Ultak                                    #
--- #                                                     #
--- #  Credits to:                                        #
--- #    Shardea of Siochain (EN/EU)                      #
--- #                                                     #
--- ¤#####################################################¤
+-- ¤############################################¤
+-- ##                                          ##
+-- ##  Ultimate Mail Mod (continued)           ##
+-- ##                                          ##
+-- ##  Maintained by: Jagodragon               ##
+-- ##                                          ##
+-- ##  By: Maxeem of Muinin (DE)               ##
+-- ##      maxeem@silverlights-muinin.de       ##
+-- ##      www.silverlights-muinin.de          ##
+-- ##                                          ##
+-- ##  Credits to Shardea of Siochain          ##
+-- ##                                          ##
+-- ##  Runes of Magic Mail system replacement  ##
+-- ##  Offers a more mail minded interface     ##
+-- ##  and mass send abilities.                ##
+-- ##                                          ##
+-- ¤############################################¤
 
- 
 UMM_VERSION = {
   Major     = 6,
   Minor     = 4,
   Revision  = 1,
-  Build     = 2753,
-  ummRev    = 2;
+  Build     = 2752,
+  ummRev    = '002';
 }
 
 -- ##### Local Variables #####
@@ -120,7 +119,7 @@ function UMMMasterFrame_OnEvent(event, arg1, arg2, arg3, arg4)
     if (AddonManager) then
       -- Skip displaying the prompt for those running AddonManager
     else
-      UMMPrompt(UMM_TITLE.." v"..UMM_VERSION.Major.."."..UMM_VERSION.Minor.."."..UMM_VERSION.Revision.." ("..UMM_VERSION.Build..")."..UMM_VERSION.ummRev..""..UMM_LOADED);
+      UMMPrompt(UMM_TITLE.." v"..UMM_VERSION.Major.."."..UMM_VERSION.Minor.."."..UMM_VERSION.Revision.." ("..UMM_VERSION.Build..") "..UMM_VERSION.ummRev..""..UMM_LOADED);
     end
   end
   if (event == "LOADING_END") then

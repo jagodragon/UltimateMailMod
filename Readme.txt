@@ -3,7 +3,7 @@
  #                                                     #
  #  Ultimate Mail Mod (continued)                      #
  #                                                     #
- #  Version: 5.0.9                                     #
+ #  Version: 6.4.1.2752.002                            #
  #                                                     #
  #  By Jagodragon                                      #
  #                                                     #
@@ -20,11 +20,18 @@
  
 CHANGELOG:
 
-Version: 6.4.1.2752.001
-Release date: October 9th 2015
 #  Known issues
    *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.
+   
+Version: 6.4.1.2752.002
+Release date: October 17 2015
+#  Changes
+   * Fixed: Fixed an error in the code for item id's Thanks goe sout to ztrek from Curse!
+   * Fixed: versioning number to include umm rev number 
 
+
+Version: 6.4.1.2752.001
+Release date: October 9th 2015
 #  Changes
    *  Updated:  Updated Ore/Wood/Herbs/GuildMats buttons. (Credits to Ultak)
    *  Added:  Improved on the database. (Credits to Ultak)
