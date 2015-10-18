@@ -34,6 +34,7 @@ UMM_NOTIFY_TOOLTIP_MOVETIP          = "Shift+Right-mouse: move this icon.";
 UMM_MENU_TAB1                       = MAIL_INBOX; -- Game default string
 UMM_MENU_TAB2                       = MAIL_SENTMAIL; -- Game default string
 UMM_MENU_TAB3                       = "Mass Send Items";
+UMM_MENU_TAB4                       = "Mass Send Mail";
 
 -- Tooltip specific
 UMM_TOOLTIP_BOUND                   = "Bound";

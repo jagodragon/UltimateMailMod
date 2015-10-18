@@ -1,9 +1,8 @@
 ## Interface
 ## Title: Ultimate Mail Mod
-## Maintainer: Jagodragon
-## Creator: Maxeem
+## Author: Maxeem
 ## Credits: Shardea of Siochain 
-## Version: 6.4.1
+## Version: 5.0.9
 Library/LibStub.lua
 Library/Sol.lua
 Library/Colors.lua
@@ -27,6 +26,8 @@ Compose/Compose.lua
 Compose/Compose.xml
 MassSendItems/MassSendItems.lua
 MassSendItems/MassSendItems.xml
+MultiSend/MultiSend.lua
+MultiSend/MultiSend.xml
 Menu/Menu.lua
 Menu/Menu.xml
 UltimateMailMod.xml
