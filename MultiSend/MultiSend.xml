@@ -1,6 +1,6 @@
 <Ui xmlns="http://www.runewaker.com/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.runewaker.com/UI.xsd">
 	
-	<Frame name="UMMComposeConfirm" inherits="UMMPopUpDialogTemplate" hidden="true" />
+	<Frame name="UMMComposeConfirmMultiSend" inherits="UMMPopUpDialogTemplate" hidden="true" />
 	
   <Frame name="UMMComposeMailTemplateMultiSend" virtual="true">
     <Size>
@@ -147,7 +147,7 @@
         <Frames>
           <EditBox name="$parentInput" inherits="UIMultiEditBoxTemplate" letters="5000" >
             <Size>
-              <AbsDimension x="295" y="325"/>
+              <AbsDimension x="295" y="280"/>
             </Size>
             <Anchors>
               <Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
@@ -180,7 +180,7 @@
             </Offset>
           </Anchor>
         </Anchors>
-        <!-- <Layers>
+        <Layers>
           <Layer level="ARTWORK">
             <FontString name="$parentAttachmentLabel" inherits="GameTitleFont" text="">
               <Anchors>
@@ -363,7 +363,7 @@
             <FontString inherits="NumberFontNormal" spacing="1"/>
           </EditBox>
 
-        </Frames>-->
+        </Frames>
       </Frame>
     </Frames>
     <Scripts>

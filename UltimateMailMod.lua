@@ -35,6 +35,8 @@ local ModEnabled  = false;
 local SETTING_GarbageCollectTime  = 900; -- seconds
 local GarbageCollectionTimeout    = SETTING_GarbageCollectTime;
 
+local UMMPath = "Interface/Addons/UltimateMailMod/"
+
 local function CheckGarbageCollection()
   if (GetPlayerCombatState()) then
     GarbageCollectionTimeout = 1;
@@ -62,7 +64,7 @@ function UMMNewMailButton_OnLoad(this)
           WarningFrame:AddMessage(UMM_NOTIFY_NEWMAILARRIVED, 0.48, 0.69, 0.86);
           if (UMMSettings:Get("AudioWarning") == true) then
             -- Play the sound warning if settings allow it
-            PlaySoundByPath("Interface/Addons/UltimateMailMod/Sound/NewMail.wav")
+            PlaySoundByPath(UMMPath.."Sound/NewMail.wav")
           end
         end
       else

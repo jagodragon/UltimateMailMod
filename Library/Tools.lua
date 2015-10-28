@@ -7,7 +7,7 @@
 
 -- ### Locale Loader ###
 
-local LOCALE_PATH = "Interface/AddOns/UltimateMailMod/Locales/";
+local LOCALE_PATH = UMMPath.."Locales/";
 local Sol = LibStub("Sol");
 
 local function LoadLUAFile(fileName)
