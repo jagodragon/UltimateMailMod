@@ -3,7 +3,7 @@
  #                                                     #
  #  Ultimate Mail Mod (continued)                      #
  #                                                     #
- #  Version: 6.4.1.2752.002                            #
+ #  Version: 6.4.2.2754.003                            #
  #                                                     #
  #  By Jagodragon                                      #
  #                                                     #
@@ -22,6 +22,12 @@ CHANGELOG:
 
 #  Known issues
    *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.
+   
+Version: 6.4.2.2754.003
+Release date: November 1 2015
+# Changes
+	*Fixed: Duplicate item Id's in the item db
+	*Updated: Added Todo Ginkgo to item db
    
 Version: 6.4.1.2752.002
 Release date: October 17 2015
