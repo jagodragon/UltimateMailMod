@@ -338,55 +338,55 @@ end
 
 -- Materials
 local function priv_AddOres(db)
-  -- Brown
-  db:priv_AddDB("Ores", 201747); -- Arcane Abyss-Mercury Ingot
-  db:priv_AddDB("Ores", 201722); -- Arcane Copper Ingot
-  db:priv_AddDB("Ores", 202590); -- Arcane Cyanide Ingot
-  db:priv_AddDB("Ores", 201733); -- Arcane Dark Crystal Ingot
-  db:priv_AddDB("Ores", 202589); -- Arcane Flame Dust Ingot
-  db:priv_AddDB("Ores", 202594); -- Arcane Frost Crystal Ingot
-  db:priv_AddDB("Ores", 201719); -- Arcane Iron Ingot
-  db:priv_AddDB("Ores", 202593); -- Arcane Mithril Ingot
-  db:priv_AddDB("Ores", 201746); -- Arcane Moon Silver Ingot
-  db:priv_AddDB("Ores", 202592); -- Arcane Mysticite Ingot
-  db:priv_AddDB("Ores", 202591); -- Arcane Rock Crystal Ingot
-  db:priv_AddDB("Ores", 201734); -- Arcane Silver Ingot
-  db:priv_AddDB("Ores", 201712); -- Arcane Tin Ingot
-  db:priv_AddDB("Ores", 201735); -- Arcane Wizard-Iron Ingot
-  db:priv_AddDB("Ores", 200263); -- Arcane Zinc Ingot
-  db:priv_AddDB("Ores", 201748); -- Arcane Rune Obsidian Ingot - 56
-  db:priv_AddDB("Ores", 202595); -- Arcane Mica Ingot - 61
-  db:priv_AddDB("Ores", 208239); -- Arcane Olivine Ingot - 61
-  db:priv_AddDB("Ores", 240319); -- Arcane Purple Agate Crystal Ingot - 66
-  db:priv_AddDB("Ores", 241437); -- Runen-Olegansteinbarren - 69
-  db:priv_AddDB("Ores", 241443); -- Runen-Zügelkristallbarren - 69
- -- Orange
-  db:priv_AddDB("Ores", 200261); -- Tempered Abyss-Mercury Ingot
-  db:priv_AddDB("Ores", 200251); -- Tempered Copper Ingot
-  db:priv_AddDB("Ores", 202583); -- Tempered Cyanide Ingot
-  db:priv_AddDB("Ores", 200253); -- Tempered Dark Crystal Ingot
-  db:priv_AddDB("Ores", 202582); -- Tempered Flame Dust Ingot
-  db:priv_AddDB("Ores", 202587); -- Tempered Frost Crystal Ingot
-  db:priv_AddDB("Ores", 200248); -- Tempered Iron Ingot
-  db:priv_AddDB("Ores", 202586); -- Tempered Mithril Ingot
-  db:priv_AddDB("Ores", 200259); -- Tempered Moon Silver Ingot
-  db:priv_AddDB("Ores", 202585); -- Tempered Mysticite Ingot
-  db:priv_AddDB("Ores", 202584); -- Tempered Rock Crystal Ingot
-  db:priv_AddDB("Ores", 200255); -- Tempered Silver Ingot
-  db:priv_AddDB("Ores", 200240); -- Tempered Tin Ingot
-  db:priv_AddDB("Ores", 200257); -- Tempered Wizard-Iron Ingot
-  db:priv_AddDB("Ores", 200233); -- Tempered Zinc Ingot
-  db:priv_AddDB("Ores", 200262); -- Tempered Rune Obsidian Ingot - 56
-  db:priv_AddDB("Ores", 202588); -- Tempered Mica Ingot - 61
-  db:priv_AddDB("Ores", 208238); -- Tempered Olivine Ingot - 61
-  db:priv_AddDB("Ores", 240318); -- Tempered Purple Agate Crystal Ingot - 66
-  db:priv_AddDB("Ores", 241436); -- Olegan Stone Ingot - 69
-  db:priv_AddDB("Ores", 241442); -- Rein Crystal Ingot - 69
-  --// Error? with db:priv_AddDB("Ores", 242250); -- Silver Star Stone Ingot - 81-- credit Ultak
-  db:priv_AddDB("Ores", 242298); -- Ironaxe Stone Ingot - 81-- credit Ultak
-  db:priv_AddDB("Ores", 242261); -- Mutation Dust Ingot - 86-- credit Ultak
-  db:priv_AddDB("Ores", 242273); -- Rainbow Stone Ingot - 91-- credit Ultak
-  db:priv_AddDB("Ores", 242307); -- Sea Crystal Ingot - 91-- credit Ultak
+  -- -- Brown
+  -- db:priv_AddDB("Ores", 201747); -- Arcane Abyss-Mercury Ingot
+  -- db:priv_AddDB("Ores", 201722); -- Arcane Copper Ingot
+  -- db:priv_AddDB("Ores", 202590); -- Arcane Cyanide Ingot
+  -- db:priv_AddDB("Ores", 201733); -- Arcane Dark Crystal Ingot
+  -- db:priv_AddDB("Ores", 202589); -- Arcane Flame Dust Ingot
+  -- db:priv_AddDB("Ores", 202594); -- Arcane Frost Crystal Ingot
+  -- db:priv_AddDB("Ores", 201719); -- Arcane Iron Ingot
+  -- db:priv_AddDB("Ores", 202593); -- Arcane Mithril Ingot
+  -- db:priv_AddDB("Ores", 201746); -- Arcane Moon Silver Ingot
+  -- db:priv_AddDB("Ores", 202592); -- Arcane Mysticite Ingot
+  -- db:priv_AddDB("Ores", 202591); -- Arcane Rock Crystal Ingot
+  -- db:priv_AddDB("Ores", 201734); -- Arcane Silver Ingot
+  -- db:priv_AddDB("Ores", 201712); -- Arcane Tin Ingot
+  -- db:priv_AddDB("Ores", 201735); -- Arcane Wizard-Iron Ingot
+  -- db:priv_AddDB("Ores", 200263); -- Arcane Zinc Ingot
+  -- db:priv_AddDB("Ores", 201748); -- Arcane Rune Obsidian Ingot - 56
+  -- db:priv_AddDB("Ores", 202595); -- Arcane Mica Ingot - 61
+  -- db:priv_AddDB("Ores", 208239); -- Arcane Olivine Ingot - 61
+  -- db:priv_AddDB("Ores", 240319); -- Arcane Purple Agate Crystal Ingot - 66
+  -- db:priv_AddDB("Ores", 241437); -- Runen-Olegansteinbarren - 69
+  -- db:priv_AddDB("Ores", 241443); -- Runen-Zügelkristallbarren - 69
+ -- -- Orange
+  -- db:priv_AddDB("Ores", 200261); -- Tempered Abyss-Mercury Ingot
+  -- db:priv_AddDB("Ores", 200251); -- Tempered Copper Ingot
+  -- db:priv_AddDB("Ores", 202583); -- Tempered Cyanide Ingot
+  -- db:priv_AddDB("Ores", 200253); -- Tempered Dark Crystal Ingot
+  -- db:priv_AddDB("Ores", 202582); -- Tempered Flame Dust Ingot
+  -- db:priv_AddDB("Ores", 202587); -- Tempered Frost Crystal Ingot
+  -- db:priv_AddDB("Ores", 200248); -- Tempered Iron Ingot
+  -- db:priv_AddDB("Ores", 202586); -- Tempered Mithril Ingot
+  -- db:priv_AddDB("Ores", 200259); -- Tempered Moon Silver Ingot
+  -- db:priv_AddDB("Ores", 202585); -- Tempered Mysticite Ingot
+  -- db:priv_AddDB("Ores", 202584); -- Tempered Rock Crystal Ingot
+  -- db:priv_AddDB("Ores", 200255); -- Tempered Silver Ingot
+  -- db:priv_AddDB("Ores", 200240); -- Tempered Tin Ingot
+  -- db:priv_AddDB("Ores", 200257); -- Tempered Wizard-Iron Ingot
+  -- db:priv_AddDB("Ores", 200233); -- Tempered Zinc Ingot
+  -- db:priv_AddDB("Ores", 200262); -- Tempered Rune Obsidian Ingot - 56
+  -- db:priv_AddDB("Ores", 202588); -- Tempered Mica Ingot - 61
+  -- db:priv_AddDB("Ores", 208238); -- Tempered Olivine Ingot - 61
+  -- db:priv_AddDB("Ores", 240318); -- Tempered Purple Agate Crystal Ingot - 66
+  -- db:priv_AddDB("Ores", 241436); -- Olegan Stone Ingot - 69
+  -- db:priv_AddDB("Ores", 241442); -- Rein Crystal Ingot - 69
+  -- --// Error? with db:priv_AddDB("Ores", 242250); -- Silver Star Stone Ingot - 81-- credit Ultak
+  -- db:priv_AddDB("Ores", 242298); -- Ironaxe Stone Ingot - 81-- credit Ultak
+  -- db:priv_AddDB("Ores", 242261); -- Mutation Dust Ingot - 86-- credit Ultak
+  -- db:priv_AddDB("Ores", 242273); -- Rainbow Stone Ingot - 91-- credit Ultak
+  -- db:priv_AddDB("Ores", 242307); -- Sea Crystal Ingot - 91-- credit Ultak
   -- Purple
   db:priv_AddDB("Ores", 201744); -- Abyss-Mercury Ingot
   db:priv_AddDB("Ores", 201739); -- Copper Ingot
@@ -499,58 +499,58 @@ local function priv_AddOres(db)
 end
 
 local function priv_AddWood(db)
-  -- Brown
-  db:priv_AddDB("Wood", 200321); -- Exquisite Ash Plank - 1
-  db:priv_AddDB("Wood", 202624); -- Exquisite Chime Wood Plank - 1
-  db:priv_AddDB("Wood", 200323); -- Exquisite Willow Plank - 8
-  db:priv_AddDB("Wood", 202625); -- Exquisite Stone Rotan Plank - 11
-  db:priv_AddDB("Wood", 200324); -- Exquisite Maple Plank - 14
-  db:priv_AddDB("Wood", 200325); -- Exquisite Oak Plank - 20
-  db:priv_AddDB("Wood", 202626); -- Exquisite Redwood Plank - 21
-  db:priv_AddDB("Wood", 200327); -- Exquisite Pine Plank - 26
-  db:priv_AddDB("Wood", 202627); -- Exquisite Dragon Beard Root Plank - 31
-  db:priv_AddDB("Wood", 200328); -- Exquisite Holly Plank - 32
-  db:priv_AddDB("Wood", 200330); -- Exquisite Yew Plank - 38
-  db:priv_AddDB("Wood", 202628); -- Exquisite Sagewood Plank - 41
-  db:priv_AddDB("Wood", 201755); -- Exquisite Tarslin Demon Wood Plank - 44
-  db:priv_AddDB("Wood", 201756); -- Exquisite Dragonlair Wood Plank - 51
-  db:priv_AddDB("Wood", 202629); -- Exquisite Fairywood Plank - 51
-  db:priv_AddDB("Wood", 201771); -- Exquisite Ancient Spirit Oak Wood Plank - 56
-  db:priv_AddDB("Wood", 202630); -- Exquisite Aeontree Plank - 61
-  db:priv_AddDB("Wood", 208245); -- Exquisite Fastan Banyan Plank - 63
-  db:priv_AddDB("Wood", 240328); -- Exquisite Janost-Cypress Plank - 69
-  db:priv_AddDB("Wood", 241431); -- Exquisite Stone Pine Plank - 71-- credit Ultak
-  db:priv_AddDB("Wood", 242247); -- Exquisite Nadal Wisteria Plank - 81-- credit Ultak
-  db:priv_AddDB("Wood", 242296); -- Exquisite Blood Palm Plank - 81-- credit Ultak
-  db:priv_AddDB("Wood", 242259); -- Exquisite Summer Oak Plank - 86-- credit Ultak
-  db:priv_AddDB("Wood", 242271); -- Exquisite Fire Mountain Tree Plank - 91-- credit Ultak
-  db:priv_AddDB("Wood", 242307); -- Exquisite Bleak Fir Plank - 91-- credit Ultak
-  -- Orange
-  db:priv_AddDB("Wood", 200294); -- Refined Ash Plank
-  db:priv_AddDB("Wood", 202617); -- Refined Chime Wood Plank
-  db:priv_AddDB("Wood", 202620); -- Refined Dragon Beard Root Plank
-  db:priv_AddDB("Wood", 200317); -- Refined Dragonlair Wood Plank
-  db:priv_AddDB("Wood", 202622); -- Refined Fairywood Plank
-  db:priv_AddDB("Wood", 200309); -- Refined Holly Plank
-  db:priv_AddDB("Wood", 200303); -- Refined Maple Plank
-  db:priv_AddDB("Wood", 200305); -- Refined Oak Plank
-  db:priv_AddDB("Wood", 200308); -- Refined Pine Plank
-  db:priv_AddDB("Wood", 202619); -- Refined Redwood Plank
-  db:priv_AddDB("Wood", 202621); -- Refined Sagewood Plank
-  db:priv_AddDB("Wood", 202618); -- Refined Stone Rotan Plank
-  db:priv_AddDB("Wood", 200315); -- Refined Tarslin Demon Wood Plank
-  db:priv_AddDB("Wood", 200301); -- Refined Willow Plank
-  db:priv_AddDB("Wood", 200314); -- Refined Yew Plank
-  db:priv_AddDB("Wood", 200319); -- Refined Ancient Spirit Oak Plank
-  db:priv_AddDB("Wood", 202623); -- Refined Aeontree Plank - 61
-  db:priv_AddDB("Wood", 208244); -- Refined Fastan Banyan Plank - 63
-  db:priv_AddDB("Wood", 240327); -- Refined Janost-Cypress Plank - 66
-  db:priv_AddDB("Wood", 241430); -- Refined Stone Pine Plank - 71
-  db:priv_AddDB("Wood", 242246); -- Refined Nadal Wisteria Plank - 81-- credit Ultak
-  db:priv_AddDB("Wood", 242294); -- Refined Blood Palm Plank - 81-- credit Ultak
-  db:priv_AddDB("Wood", 242258); -- Refined Summer Oak Plank - 86-- credit Ultak
-  db:priv_AddDB("Wood", 242270); -- Refined Fire Mountain Tree Plank - 91-- credit Ultak
-  db:priv_AddDB("Wood", 242306); -- Refined Bleak Fir Plank - 91-- credit Ultak
+  -- -- Brown
+  -- db:priv_AddDB("Wood", 200321); -- Exquisite Ash Plank - 1
+  -- db:priv_AddDB("Wood", 202624); -- Exquisite Chime Wood Plank - 1
+  -- db:priv_AddDB("Wood", 200323); -- Exquisite Willow Plank - 8
+  -- db:priv_AddDB("Wood", 202625); -- Exquisite Stone Rotan Plank - 11
+  -- db:priv_AddDB("Wood", 200324); -- Exquisite Maple Plank - 14
+  -- db:priv_AddDB("Wood", 200325); -- Exquisite Oak Plank - 20
+  -- db:priv_AddDB("Wood", 202626); -- Exquisite Redwood Plank - 21
+  -- db:priv_AddDB("Wood", 200327); -- Exquisite Pine Plank - 26
+  -- db:priv_AddDB("Wood", 202627); -- Exquisite Dragon Beard Root Plank - 31
+  -- db:priv_AddDB("Wood", 200328); -- Exquisite Holly Plank - 32
+  -- db:priv_AddDB("Wood", 200330); -- Exquisite Yew Plank - 38
+  -- db:priv_AddDB("Wood", 202628); -- Exquisite Sagewood Plank - 41
+  -- db:priv_AddDB("Wood", 201755); -- Exquisite Tarslin Demon Wood Plank - 44
+  -- db:priv_AddDB("Wood", 201756); -- Exquisite Dragonlair Wood Plank - 51
+  -- db:priv_AddDB("Wood", 202629); -- Exquisite Fairywood Plank - 51
+  -- db:priv_AddDB("Wood", 201771); -- Exquisite Ancient Spirit Oak Wood Plank - 56
+  -- db:priv_AddDB("Wood", 202630); -- Exquisite Aeontree Plank - 61
+  -- db:priv_AddDB("Wood", 208245); -- Exquisite Fastan Banyan Plank - 63
+  -- db:priv_AddDB("Wood", 240328); -- Exquisite Janost-Cypress Plank - 69
+  -- db:priv_AddDB("Wood", 241431); -- Exquisite Stone Pine Plank - 71-- credit Ultak
+  -- db:priv_AddDB("Wood", 242247); -- Exquisite Nadal Wisteria Plank - 81-- credit Ultak
+  -- db:priv_AddDB("Wood", 242296); -- Exquisite Blood Palm Plank - 81-- credit Ultak
+  -- db:priv_AddDB("Wood", 242259); -- Exquisite Summer Oak Plank - 86-- credit Ultak
+  -- db:priv_AddDB("Wood", 242271); -- Exquisite Fire Mountain Tree Plank - 91-- credit Ultak
+  -- db:priv_AddDB("Wood", 242307); -- Exquisite Bleak Fir Plank - 91-- credit Ultak
+  -- -- Orange
+  -- db:priv_AddDB("Wood", 200294); -- Refined Ash Plank
+  -- db:priv_AddDB("Wood", 202617); -- Refined Chime Wood Plank
+  -- db:priv_AddDB("Wood", 202620); -- Refined Dragon Beard Root Plank
+  -- db:priv_AddDB("Wood", 200317); -- Refined Dragonlair Wood Plank
+  -- db:priv_AddDB("Wood", 202622); -- Refined Fairywood Plank
+  -- db:priv_AddDB("Wood", 200309); -- Refined Holly Plank
+  -- db:priv_AddDB("Wood", 200303); -- Refined Maple Plank
+  -- db:priv_AddDB("Wood", 200305); -- Refined Oak Plank
+  -- db:priv_AddDB("Wood", 200308); -- Refined Pine Plank
+  -- db:priv_AddDB("Wood", 202619); -- Refined Redwood Plank
+  -- db:priv_AddDB("Wood", 202621); -- Refined Sagewood Plank
+  -- db:priv_AddDB("Wood", 202618); -- Refined Stone Rotan Plank
+  -- db:priv_AddDB("Wood", 200315); -- Refined Tarslin Demon Wood Plank
+  -- db:priv_AddDB("Wood", 200301); -- Refined Willow Plank
+  -- db:priv_AddDB("Wood", 200314); -- Refined Yew Plank
+  -- db:priv_AddDB("Wood", 200319); -- Refined Ancient Spirit Oak Plank
+  -- db:priv_AddDB("Wood", 202623); -- Refined Aeontree Plank - 61
+  -- db:priv_AddDB("Wood", 208244); -- Refined Fastan Banyan Plank - 63
+  -- db:priv_AddDB("Wood", 240327); -- Refined Janost-Cypress Plank - 66
+  -- db:priv_AddDB("Wood", 241430); -- Refined Stone Pine Plank - 71
+  -- db:priv_AddDB("Wood", 242246); -- Refined Nadal Wisteria Plank - 81-- credit Ultak
+  -- db:priv_AddDB("Wood", 242294); -- Refined Blood Palm Plank - 81-- credit Ultak
+  -- db:priv_AddDB("Wood", 242258); -- Refined Summer Oak Plank - 86-- credit Ultak
+  -- db:priv_AddDB("Wood", 242270); -- Refined Fire Mountain Tree Plank - 91-- credit Ultak
+  -- db:priv_AddDB("Wood", 242306); -- Refined Bleak Fir Plank - 91-- credit Ultak
   -- Purple
   db:priv_AddDB("Wood", 201773); -- Ash Plank
   db:priv_AddDB("Wood", 202610); -- Chime Wood Plank
@@ -571,6 +571,7 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 202616); -- Aeontree Plank - 61
   db:priv_AddDB("Wood", 208243); -- Fastan Banyan Plank - 63
   db:priv_AddDB("Wood", 240326); -- Janost-Zypressenbrett - 66-- credit Ultak
+  db:priv_AddDB("Wood", 241423); -- Todo Ginkgo Plank?
   db:priv_AddDB("Wood", 241429); -- Pinienholzbrett - 69-- credit Ultak
   db:priv_AddDB("Wood", 242245); -- Nadal Wisteria Plank - 81-- credit Ultak
   db:priv_AddDB("Wood", 242293); -- Blood Palm Plank - 81-- credit Ultak
@@ -597,6 +598,7 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 202609); -- Aeontree Lumber - 61
   db:priv_AddDB("Wood", 208242); -- Fastan Banyan Lumber - 63
   db:priv_AddDB("Wood", 240325); -- Janost-Cypress Lumber - 66
+  db:priv_AddDB("Wood", 241422); -- Todo Ginkgo Lumber
   db:priv_AddDB("Wood", 241428); -- Stone Pine Lumber - 71-- credit Ultak
   db:priv_AddDB("Wood", 242244); -- Nadal Wisteria Lumber - 81-- credit Ultak
   db:priv_AddDB("Wood", 242292); -- Blood Palm Lumber - 81-- credit Ultak
@@ -624,6 +626,7 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 208241); -- Fastan Banyan Timber - 63
   db:priv_AddDB("Wood", 240324); -- Janost-Cypress Timber - 66
   db:priv_AddDB("Wood", 241427); -- Stone Pine Timber - 71-- credit Ultak
+  db:priv_AddDB("Wood", 241421); -- Todo Ginkgo Timber
   db:priv_AddDB("Wood", 242243); -- Nadal Wisteria Timber - 81-- credit Ultak
   db:priv_AddDB("Wood", 242291); -- Blood Palm Timber - 81-- credit Ultak
   db:priv_AddDB("Wood", 242255); -- Summer Oak Timber - 86-- credit Ultak
@@ -649,6 +652,7 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 202318); -- Aeontree Wood - 61
   db:priv_AddDB("Wood", 208240); -- Fastan Banyan - 63
   db:priv_AddDB("Wood", 240323); -- Janost-Cypress Wood - 66
+  db:priv_AddDB("Wood", 241420); -- Todo Ginkgo Tree - 66?
   db:priv_AddDB("Wood", 241426); -- Stone Pine Wood - 71-- credit Ultak
   db:priv_AddDB("Wood", 242242); -- Nadal Wisteria Wood - 81-- credit Ultak
   db:priv_AddDB("Wood", 242290); -- Blood Palm Wood - 81-- credit Ultak
@@ -658,60 +662,60 @@ local function priv_AddWood(db)
 end
 
 local function priv_AddHerbs(db)
-  -- Brown
-  db:priv_AddDB("Herbs", 201793); -- Barsaleaf Essence
-  db:priv_AddDB("Herbs", 200367); -- Beetroot Essence
-  db:priv_AddDB("Herbs", 202660); -- Bison Grass Essence
-  db:priv_AddDB("Herbs", 200368); -- Bitterleaf Essence
-  db:priv_AddDB("Herbs", 201810); -- Dragon Mallow Essence
-  db:priv_AddDB("Herbs", 201790); -- Dusk Orchid Essence
-  db:priv_AddDB("Herbs", 202661); -- Foloin Nut Essence
-  db:priv_AddDB("Herbs", 202662); -- Green Thistle Essence
-  db:priv_AddDB("Herbs", 201795); -- Moon Orchid Essence
-  db:priv_AddDB("Herbs", 200366); -- Mountain Demon Grass Essence
-  db:priv_AddDB("Herbs", 201787); -- Moxa Essence
-  db:priv_AddDB("Herbs", 202659); -- Rosemary Essence
-  db:priv_AddDB("Herbs", 202663); -- Straw Mushroom Essence - 41
-  db:priv_AddDB("Herbs", 201809); -- Sinners Palm Essence - 44
-  db:priv_AddDB("Herbs", 202664); -- Mirror Sedge Essence - 51
-  db:priv_AddDB("Herbs", 201811); -- Thorn Apple Essence - 56
-  db:priv_AddDB("Herbs", 202665); -- Goblin Grass Essence - 61
-  db:priv_AddDB("Herbs", 208251); -- Verbena Essence - 63
-  db:priv_AddDB("Herbs", 240334); -- Nocturnal Lantern Grass Essence - 66
-  db:priv_AddDB("Herbs", 241419); -- Dovetail Flower Essence - 71-- credit Ultak
-  db:priv_AddDB("Herbs", 241413); -- Thunderhoof Grass Essence - 66-- credit Ultak
-  db:priv_AddDB("Herbs", 242255); -- Isyeh Grass Essence - 81-- credit Ultak
-  db:priv_AddDB("Herbs", 242303); -- Dragonsprout Grass Essence - 81-- credit Ultak
-  db:priv_AddDB("Herbs", 242267); -- Cold Psilotum Essence - 86-- credit Ultak
-  db:priv_AddDB("Herbs", 242279); -- Snow Grass Essence - 91-- credit Ultak
-  db:priv_AddDB("Herbs", 242315); -- Moon Grass Essence - 91-- credit Ultak
-  -- Orange
-  db:priv_AddDB("Herbs", 200344); -- Pure Barsleaf Extract
-  db:priv_AddDB("Herbs", 200337); -- Pure Beetroot Extract
-  db:priv_AddDB("Herbs", 202653); -- Pure Bison Grass Extract
-  db:priv_AddDB("Herbs", 200339); -- Pure Bitterleaf Extract
-  db:priv_AddDB("Herbs", 200360); -- Pure Dragon Mallow Extract
-  db:priv_AddDB("Herbs", 200341); -- Pure Dusk Orchid Extract
-  db:priv_AddDB("Herbs", 202654); -- Pure Foloin Nut Extract
-  db:priv_AddDB("Herbs", 202655); -- Pure Green Thistle Extract
-  db:priv_AddDB("Herbs", 200355); -- Pure Moon Orchid Extract
-  db:priv_AddDB("Herbs", 200336); -- Pure Mountain Demon Grass Extract
-  db:priv_AddDB("Herbs", 200340); -- Pure Moxa Extract
-  db:priv_AddDB("Herbs", 202652); -- Pure Rosemary Extract
-  db:priv_AddDB("Herbs", 202656); -- Pure Straw Mushroom Extract - 41
-  db:priv_AddDB("Herbs", 200356); -- Pure Sinners Palm Extract - 44
-  db:priv_AddDB("Herbs", 202657); -- Pure Mirror Sedge Extract - 51
-  db:priv_AddDB("Herbs", 200364); -- Pure Thorn Apple Extract - 56
-  db:priv_AddDB("Herbs", 202658); -- Pure Goblin Grass Extract - 61
-  db:priv_AddDB("Herbs", 208250); -- Pure Verbena Extract - 63
-  db:priv_AddDB("Herbs", 240333); -- Pure Nocturnal Lantern Grass - 66
-  db:priv_AddDB("Herbs", 241418); -- Pure Dovetail Flower - 71-- credit Ultak
-  db:priv_AddDB("Herbs", 241412); -- Pure Thunderhoof Grass - 75-- credit Ultak
-  db:priv_AddDB("Herbs", 242254); -- Pure Isyeh Grass - 81-- credit Ultak
-  db:priv_AddDB("Herbs", 242302); -- Pure Dragonsprout Grass - 81-- credit Ultak
-  db:priv_AddDB("Herbs", 242266); -- Pure Cold Psilotum - 86-- credit Ultak
-  db:priv_AddDB("Herbs", 242278); -- Pure Snow Grass - 91-- credit Ultak
-  db:priv_AddDB("Herbs", 242314); -- Pure Moon Grass - 91-- credit Ultak
+  -- -- Brown
+  -- db:priv_AddDB("Herbs", 201793); -- Barsaleaf Essence
+  -- db:priv_AddDB("Herbs", 200367); -- Beetroot Essence
+  -- db:priv_AddDB("Herbs", 202660); -- Bison Grass Essence
+  -- db:priv_AddDB("Herbs", 200368); -- Bitterleaf Essence
+  -- db:priv_AddDB("Herbs", 201810); -- Dragon Mallow Essence
+  -- db:priv_AddDB("Herbs", 201790); -- Dusk Orchid Essence
+  -- db:priv_AddDB("Herbs", 202661); -- Foloin Nut Essence
+  -- db:priv_AddDB("Herbs", 202662); -- Green Thistle Essence
+  -- db:priv_AddDB("Herbs", 201795); -- Moon Orchid Essence
+  -- db:priv_AddDB("Herbs", 200366); -- Mountain Demon Grass Essence
+  -- db:priv_AddDB("Herbs", 201787); -- Moxa Essence
+  -- db:priv_AddDB("Herbs", 202659); -- Rosemary Essence
+  -- db:priv_AddDB("Herbs", 202663); -- Straw Mushroom Essence - 41
+  -- db:priv_AddDB("Herbs", 201809); -- Sinners Palm Essence - 44
+  -- db:priv_AddDB("Herbs", 202664); -- Mirror Sedge Essence - 51
+  -- db:priv_AddDB("Herbs", 201811); -- Thorn Apple Essence - 56
+  -- db:priv_AddDB("Herbs", 202665); -- Goblin Grass Essence - 61
+  -- db:priv_AddDB("Herbs", 208251); -- Verbena Essence - 63
+  -- db:priv_AddDB("Herbs", 240334); -- Nocturnal Lantern Grass Essence - 66
+  -- db:priv_AddDB("Herbs", 241419); -- Dovetail Flower Essence - 71-- credit Ultak
+  -- db:priv_AddDB("Herbs", 241413); -- Thunderhoof Grass Essence - 66-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242255); -- Isyeh Grass Essence - 81-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242303); -- Dragonsprout Grass Essence - 81-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242267); -- Cold Psilotum Essence - 86-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242279); -- Snow Grass Essence - 91-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242315); -- Moon Grass Essence - 91-- credit Ultak
+  -- -- Orange
+  -- db:priv_AddDB("Herbs", 200344); -- Pure Barsleaf Extract
+  -- db:priv_AddDB("Herbs", 200337); -- Pure Beetroot Extract
+  -- db:priv_AddDB("Herbs", 202653); -- Pure Bison Grass Extract
+  -- db:priv_AddDB("Herbs", 200339); -- Pure Bitterleaf Extract
+  -- db:priv_AddDB("Herbs", 200360); -- Pure Dragon Mallow Extract
+  -- db:priv_AddDB("Herbs", 200341); -- Pure Dusk Orchid Extract
+  -- db:priv_AddDB("Herbs", 202654); -- Pure Foloin Nut Extract
+  -- db:priv_AddDB("Herbs", 202655); -- Pure Green Thistle Extract
+  -- db:priv_AddDB("Herbs", 200355); -- Pure Moon Orchid Extract
+  -- db:priv_AddDB("Herbs", 200336); -- Pure Mountain Demon Grass Extract
+  -- db:priv_AddDB("Herbs", 200340); -- Pure Moxa Extract
+  -- db:priv_AddDB("Herbs", 202652); -- Pure Rosemary Extract
+  -- db:priv_AddDB("Herbs", 202656); -- Pure Straw Mushroom Extract - 41
+  -- db:priv_AddDB("Herbs", 200356); -- Pure Sinners Palm Extract - 44
+  -- db:priv_AddDB("Herbs", 202657); -- Pure Mirror Sedge Extract - 51
+  -- db:priv_AddDB("Herbs", 200364); -- Pure Thorn Apple Extract - 56
+  -- db:priv_AddDB("Herbs", 202658); -- Pure Goblin Grass Extract - 61
+  -- db:priv_AddDB("Herbs", 208250); -- Pure Verbena Extract - 63
+  -- db:priv_AddDB("Herbs", 240333); -- Pure Nocturnal Lantern Grass - 66
+  -- db:priv_AddDB("Herbs", 241418); -- Pure Dovetail Flower - 71-- credit Ultak
+  -- db:priv_AddDB("Herbs", 241412); -- Pure Thunderhoof Grass - 75-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242254); -- Pure Isyeh Grass - 81-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242302); -- Pure Dragonsprout Grass - 81-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242266); -- Pure Cold Psilotum - 86-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242278); -- Pure Snow Grass - 91-- credit Ultak
+  -- db:priv_AddDB("Herbs", 242314); -- Pure Moon Grass - 91-- credit Ultak
   -- Purple
   db:priv_AddDB("Herbs", 201818); -- Barsleaf Extract
   db:priv_AddDB("Herbs", 201814); -- Beetroot Extract
