@@ -571,6 +571,7 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 202616); -- Aeontree Plank - 61
   db:priv_AddDB("Wood", 208243); -- Fastan Banyan Plank - 63
   db:priv_AddDB("Wood", 240326); -- Janost-Zypressenbrett - 66-- credit Ultak
+  db:priv_AddDB("Wood", 241423); -- Todo Ginkgo Plank?
   db:priv_AddDB("Wood", 241429); -- Pinienholzbrett - 69-- credit Ultak
   db:priv_AddDB("Wood", 242245); -- Nadal Wisteria Plank - 81-- credit Ultak
   db:priv_AddDB("Wood", 242293); -- Blood Palm Plank - 81-- credit Ultak
@@ -597,6 +598,7 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 202609); -- Aeontree Lumber - 61
   db:priv_AddDB("Wood", 208242); -- Fastan Banyan Lumber - 63
   db:priv_AddDB("Wood", 240325); -- Janost-Cypress Lumber - 66
+  db:priv_AddDB("Wood", 241422); -- Todo Ginkgo Lumber
   db:priv_AddDB("Wood", 241428); -- Stone Pine Lumber - 71-- credit Ultak
   db:priv_AddDB("Wood", 242244); -- Nadal Wisteria Lumber - 81-- credit Ultak
   db:priv_AddDB("Wood", 242292); -- Blood Palm Lumber - 81-- credit Ultak
@@ -624,6 +626,7 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 208241); -- Fastan Banyan Timber - 63
   db:priv_AddDB("Wood", 240324); -- Janost-Cypress Timber - 66
   db:priv_AddDB("Wood", 241427); -- Stone Pine Timber - 71-- credit Ultak
+  db:priv_AddDB("Wood", 241421); -- Todo Ginkgo Timber
   db:priv_AddDB("Wood", 242243); -- Nadal Wisteria Timber - 81-- credit Ultak
   db:priv_AddDB("Wood", 242291); -- Blood Palm Timber - 81-- credit Ultak
   db:priv_AddDB("Wood", 242255); -- Summer Oak Timber - 86-- credit Ultak
