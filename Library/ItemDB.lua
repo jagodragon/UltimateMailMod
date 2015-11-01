@@ -649,6 +649,7 @@ local function priv_AddWood(db)
   db:priv_AddDB("Wood", 202318); -- Aeontree Wood - 61
   db:priv_AddDB("Wood", 208240); -- Fastan Banyan - 63
   db:priv_AddDB("Wood", 240323); -- Janost-Cypress Wood - 66
+  db:priv_AddDB("Wood", 241420); -- Todo Ginkgo Tree - 66?
   db:priv_AddDB("Wood", 241426); -- Stone Pine Wood - 71-- credit Ultak
   db:priv_AddDB("Wood", 242242); -- Nadal Wisteria Wood - 81-- credit Ultak
   db:priv_AddDB("Wood", 242290); -- Blood Palm Wood - 81-- credit Ultak
