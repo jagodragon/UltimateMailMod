@@ -21,8 +21,8 @@ UMM_VERSION = {
   Major     = 6,
   Minor     = 4,
   Revision  = 2,
-  Build     = 2754,
-  ummRev    = '003';
+  Build     = 2755,
+  ummRev    = '004';
 }
 
 -- ##### Local Variables #####

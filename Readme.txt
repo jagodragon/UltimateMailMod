@@ -23,6 +23,11 @@ CHANGELOG:
 #  Known issues
    *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.
    
+Version: 6.4.2.2754.004
+Release date: November 1 2015
+# Changes
+	*Updated: Updated Blue Raw materials up to lvl 96
+   
 Version: 6.4.2.2754.003
 Release date: November 1 2015
 # Changes
