@@ -3,7 +3,7 @@
 -- #                                                     #
 -- #  Ultimate Mail Mod (continued)                      #
 -- #                                                     #
--- #  Version: 5.0.9                                     #
+-- #  Version: 6.4.2                                     #
 -- #                                                     #
 -- #  By Jagodragon                                      #
 -- #                                                     #
@@ -21,9 +21,9 @@
 UMM_VERSION = {
   Major     = 6,
   Minor     = 4,
-  Revision  = 1,
-  Build     = 2753,
-  ummRev    = 2;
+  Revision  = 2,
+  Build     = 2755,
+  ummRev    = '004';
 }
 
 -- ##### Local Variables #####

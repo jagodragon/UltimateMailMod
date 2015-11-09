@@ -890,6 +890,22 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 202127); -- Tulipwood Fiber
   db:priv_AddDB("RawMaterials", 202109); -- Wooden Nail
   db:priv_AddDB("RawMaterials", 202122); -- Zeta Metal Stone
+  db:priv_AddDB("RawMaterials", 242314); -- Siren Star
+  db:priv_AddDB("RawMaterials", 242315); -- Tin Nail
+  db:priv_AddDB("RawMaterials", 242316); -- Desny Metal Stone
+  db:priv_AddDB("RawMaterials", 242317); -- Green Fibre
+  db:priv_AddDB("RawMaterials", 242318); -- Peace Stone
+  db:priv_AddDB("RawMaterials", 242319); -- Silver-Mercury Nail
+  db:priv_AddDB("RawMaterials", 242320); -- Rogi Metal Stone
+  db:priv_AddDB("RawMaterials", 242321); -- Cotton Fiber
+  db:priv_AddDB("RawMaterials", 242322); -- Lotus Star
+  db:priv_AddDB("RawMaterials", 242323); -- Wolfram Gold Nail
+  db:priv_AddDB("RawMaterials", 242324); -- Floyd Metal Stone
+  db:priv_AddDB("RawMaterials", 242325); -- Beach Fibre
+  db:priv_AddDB("RawMaterials", 242326); -- Rainbow Star
+  db:priv_AddDB("RawMaterials", 242327); -- Silver Copper Nail
+  db:priv_AddDB("RawMaterials", 242328); -- Gutis Metal Stone
+  db:priv_AddDB("RawMaterials", 242329); -- Mineral Wolf Fibre
   -- Green
   db:priv_AddDB("RawMaterials", 203015); -- Assassin's Sword Hilt
   db:priv_AddDB("RawMaterials", 203011); -- Broken Goblin Staff
