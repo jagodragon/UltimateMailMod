@@ -1,22 +1,23 @@
 
--- ¤############################################¤
--- ##                                          ##
--- ##  Ultimate Mail Mod (continued)           ##
--- ##                                          ##
--- ##  Maintained by: Jagodragon               ##
--- ##                                          ##
--- ##  By: Maxeem of Muinin (DE)               ##
--- ##      maxeem@silverlights-muinin.de       ##
--- ##      www.silverlights-muinin.de          ##
--- ##                                          ##
--- ##  Credits to Shardea of Siochain          ##
--- ##                                          ##
--- ##  Runes of Magic Mail system replacement  ##
--- ##  Offers a more mail minded interface     ##
--- ##  and mass send abilities.                ##
--- ##                                          ##
--- ¤############################################¤
+-- ¤#####################################################¤
+-- #                                                     #
+-- #  Ultimate Mail Mod (continued)                      #
+-- #                                                     #
+-- #  Version: 6.4.2                                     #
+-- #                                                     #
+-- #  By Jagodragon                                      #
+-- #                                                     #
+-- #     Maxeem of Muinin                                #
+-- #     maxeem@silverlights-muinin.de                   #
+-- #                                                     #
+-- #  Thanks to Ultak                                    #
+-- #                                                     #
+-- #  Credits to:                                        #
+-- #    Shardea of Siochain (EN/EU)                      #
+-- #                                                     #
+-- ¤#####################################################¤
 
+ 
 UMM_VERSION = {
   Major     = 6,
   Minor     = 4,
@@ -33,6 +34,8 @@ local ModEnabled  = false;
 
 local SETTING_GarbageCollectTime  = 900; -- seconds
 local GarbageCollectionTimeout    = SETTING_GarbageCollectTime;
+
+local UMMPath = "Interface/Addons/UltimateMailMod/"
 
 local function CheckGarbageCollection()
   if (GetPlayerCombatState()) then
@@ -61,7 +64,7 @@ function UMMNewMailButton_OnLoad(this)
           WarningFrame:AddMessage(UMM_NOTIFY_NEWMAILARRIVED, 0.48, 0.69, 0.86);
           if (UMMSettings:Get("AudioWarning") == true) then
             -- Play the sound warning if settings allow it
-            PlaySoundByPath("Interface/Addons/UltimateMailMod/Sound/NewMail.wav")
+            PlaySoundByPath(UMMPath.."Sound/NewMail.wav")
           end
         end
       else
@@ -119,7 +122,7 @@ function UMMMasterFrame_OnEvent(event, arg1, arg2, arg3, arg4)
     if (AddonManager) then
       -- Skip displaying the prompt for those running AddonManager
     else
-      UMMPrompt(UMM_TITLE.." v"..UMM_VERSION.Major.."."..UMM_VERSION.Minor.."."..UMM_VERSION.Revision.." ("..UMM_VERSION.Build..") "..UMM_VERSION.ummRev..""..UMM_LOADED);
+      UMMPrompt(UMM_TITLE.." v"..UMM_VERSION.Major.."."..UMM_VERSION.Minor.."."..UMM_VERSION.Revision.." ("..UMM_VERSION.Build..")."..UMM_VERSION.ummRev..""..UMM_LOADED);
     end
   end
   if (event == "LOADING_END") then

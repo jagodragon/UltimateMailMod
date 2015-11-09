@@ -4,7 +4,6 @@
  #  Ultimate Mail Mod (continued)                      #
  #                                                     #
  #  Version: 6.4.2.2754.003                            #
- #                                                     #
  #  By Jagodragon                                      #
  #                                                     #
  #     Maxeem of Muinin                                #
@@ -20,14 +19,6 @@
  
 CHANGELOG:
 
-#  Known issues
-   *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.
-   
-Version: 6.4.2.2754.004
-Release date: November 1 2015
-# Changes
-	*Updated: Updated Blue Raw materials up to lvl 96
-   
 Version: 6.4.2.2754.003
 Release date: November 1 2015
 # Changes
@@ -39,15 +30,19 @@ Release date: October 17 2015
 #  Changes
    * Fixed: Fixed an error in the code for item id's Thanks goe sout to ztrek from Curse!
    * Fixed: versioning number to include umm rev number 
-
-
-Version: 6.4.1.2752.001
-Release date: October 9th 2015
 #  Changes
    *  Updated:  Updated Ore/Wood/Herbs/GuildMats buttons. (Credits to Ultak)
    *  Added:  Improved on the database. (Credits to Ultak)
    *  Added:  Button and back-end for Bag Stat selection and mailing. (Credits to Ultak)
- 
+
+Version: 6.4.1.2752.001
+Release date: October 9th 2015
+#  Known issues
+   *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.
+Version: 6.4.2.2754.004
+Release date: November 1 2015
+# Changes
+	*Updated: Updated Blue Raw materials up to lvl 96 
  
 -------------------------------------------------------
  
