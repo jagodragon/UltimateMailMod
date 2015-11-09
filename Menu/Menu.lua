@@ -10,7 +10,7 @@ local hideMailFrame = true;
 local function SetupTabs(this)
   local i, tab, tabBody, title;
   
-  for i = 1, 4 do
+  for i = 1, 3 do
     tab = getglobal(this:GetName().."Tab"..i.."Button");
     tabBody = getglobal(this:GetName().."Tab"..i);
     title = getglobal("UMM_MENU_TAB"..i);
@@ -34,7 +34,7 @@ end
 function UMMMenuSelectTab(id)
   local i, tab, tabBody;
   
-  for i = 1, 4 do
+  for i = 1, 3 do
     tab = getglobal("UMMFrameTab"..i.."Button");
     tabBody = getglobal("UMMFrameTab"..i);
     if (i == id) then
