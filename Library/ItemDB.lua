@@ -834,6 +834,7 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 205830); -- Feyenloth's Return
   db:priv_AddDB("RawMaterials", 205827); -- Feyenloth's Tranquility
   db:priv_AddDB("RawMaterials", 205832); -- Strange Magical Leaf
+  db:priv_AddDB("RawMaterials", 204529); -- Hormone Crystal
   -- Purple
   db:priv_AddDB("RawMaterials", 205729); -- Feyenloth's Fear
   db:priv_AddDB("RawMaterials", 205823); -- Payer of Life
@@ -843,6 +844,7 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 205825); -- Prayer of Struggle
   db:priv_AddDB("RawMaterials", 205824); -- Prayer of Weaving
   db:priv_AddDB("RawMaterials", 203018); -- Rune Crystal
+  db:priv_AddDB("RawMaterials", 241820); -- Frost Breath
   -- Blue
   db:priv_AddDB("RawMaterials", 202125); -- Aloeswood Fiber
   db:priv_AddDB("RawMaterials", 202117); -- Alpha Metal Stone
@@ -890,6 +892,7 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 202127); -- Tulipwood Fiber
   db:priv_AddDB("RawMaterials", 202109); -- Wooden Nail
   db:priv_AddDB("RawMaterials", 202122); -- Zeta Metal Stone
+  db:priv_AddDB("RawMaterials", 242065); -- Impeth Metal Stone
   db:priv_AddDB("RawMaterials", 242314); -- Siren Star
   db:priv_AddDB("RawMaterials", 242315); -- Tin Nail
   db:priv_AddDB("RawMaterials", 242316); -- Desny Metal Stone
@@ -906,6 +909,22 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 242327); -- Silver Copper Nail
   db:priv_AddDB("RawMaterials", 242328); -- Gutis Metal Stone
   db:priv_AddDB("RawMaterials", 242329); -- Mineral Wolf Fibre
+  db:priv_AddDB("RawMaterials", 207409); -- Harvest God Star Stone
+  db:priv_AddDB("RawMaterials", 207410); -- Wisdom God Star Stone
+  db:priv_AddDB("RawMaterials", 207411); -- White Gold Nail
+  db:priv_AddDB("RawMaterials", 207412); -- Wolfram Nail
+  db:priv_AddDB("RawMaterials", 207413); -- Soaring Tower Metal Stone
+  db:priv_AddDB("RawMaterials", 207414); -- Shigassa Metal Stone
+  db:priv_AddDB("RawMaterials", 207415); -- Soaring Tower Metal Stone
+  db:priv_AddDB("RawMaterials", 207416); -- Sago Palm Fiber
+  db:priv_AddDB("RawMaterials", 208252); -- Fertile Goddess Star Stone
+  db:priv_AddDB("RawMaterials", 208253); -- Mottled Copper Nail
+  db:priv_AddDB("RawMaterials", 208254); -- Ikes' Metal Stone
+  db:priv_AddDB("RawMaterials", 208255); -- Flax
+  db:priv_AddDB("RawMaterials", 240410); -- Dark Planet Stone
+  db:priv_AddDB("RawMaterials", 240411); -- White Iron Nail
+  db:priv_AddDB("RawMaterials", 240412); -- Sigma Metal Stone
+  db:priv_AddDB("RawMaterials", 240413); -- Palm Fiber
   -- Green
   db:priv_AddDB("RawMaterials", 203015); -- Assassin's Sword Hilt
   db:priv_AddDB("RawMaterials", 203011); -- Broken Goblin Staff
@@ -920,6 +939,7 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 202994); -- Very Low Magic Element
   db:priv_AddDB("RawMaterials", 203006); -- Very Low Rune Power
   db:priv_AddDB("RawMaterials", 203010); -- Worn Kobold Robe
+  db:priv_AddDB("RawMaterials", 206028); -- Resilient Dragon Skin
   -- White
   db:priv_AddDB("RawMaterials", 201952); -- Alchemy Bottle
   db:priv_AddDB("RawMaterials", 203419); -- Animal Meat
@@ -957,6 +977,8 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 201536); -- Wandering Ent Bud
   db:priv_AddDB("RawMaterials", 203424); -- Witchcraft Sugar
   db:priv_AddDB("RawMaterials", 201538); -- Young Ostrich's Egg
+  -- Boss Furniture
+  
 end
 
 local function priv_AddProductionRunes(db)
@@ -1368,16 +1390,16 @@ local function priv_AddRunes(db)
   db:priv_AddDB("Runes", 520690); -- Hatred X
   
   -- Intellect
-  db:priv_AddDB("Runes", 520541); -- Intellect I
-  db:priv_AddDB("Runes", 520542); -- Intellect II
-  db:priv_AddDB("Runes", 520543); -- Intellect III
-  db:priv_AddDB("Runes", 520544); -- Intellect IV
-  db:priv_AddDB("Runes", 520545); -- Intellect V
-  db:priv_AddDB("Runes", 520546); -- Intellect VI
-  db:priv_AddDB("Runes", 520547); -- Intellect VII
-  db:priv_AddDB("Runes", 520548); -- Intellect VIII
-  db:priv_AddDB("Runes", 520549); -- Intellect IX
-  db:priv_AddDB("Runes", 520550); -- Intellect X
+  db:priv_AddDB("Runes", 520911); -- Intellect I
+  db:priv_AddDB("Runes", 520912); -- Intellect II
+  db:priv_AddDB("Runes", 520913); -- Intellect III
+  db:priv_AddDB("Runes", 520914); -- Intellect IV
+  db:priv_AddDB("Runes", 520915); -- Intellect V
+  db:priv_AddDB("Runes", 520916); -- Intellect VI
+  db:priv_AddDB("Runes", 520917); -- Intellect VII
+  db:priv_AddDB("Runes", 520918); -- Intellect VIII
+  db:priv_AddDB("Runes", 520919); -- Intellect IX
+  db:priv_AddDB("Runes", 520920); -- Intellect X
   
   -- Keenness
   db:priv_AddDB("Runes", 521171); -- Keenness I
