@@ -39,6 +39,7 @@ Memory Cleanup:
 
 Credits
 =======
+Jagodragon (Current maintainer)
 Shareda of Siochain (Original Developer)
 mvoigt (Former developer)
 Maxeem (Former developer)

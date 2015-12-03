@@ -3,7 +3,7 @@
  #                                                     #
  #  Ultimate Mail Mod (continued)                      #
  #                                                     #
- #  Version: 6.4.2.2755.004                            #
+ #  Version: 6.4.2.2758.005                            #
  #  By Jagodragon                                      #
  #                                                     #
  #     Maxeem of Muinin                                #
@@ -21,6 +21,11 @@ CHANGELOG:
 
 #Known issues
    *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.
+
+Version: 6.4.2.2758.005
+Release date: December 2 2015
+# Changes
+	*Updated: Updated Database adding several missing items
 
 Version: 6.4.2.2755.004
 Release date: November 8 2015
