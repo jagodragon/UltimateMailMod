@@ -845,6 +845,10 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 205824); -- Prayer of Weaving
   db:priv_AddDB("RawMaterials", 203018); -- Rune Crystal
   db:priv_AddDB("RawMaterials", 241820); -- Frost Breath
+  db:priv_AddDB("RawMaterials", 206032); -- 
+  db:priv_AddDB("RawMaterials", 206033); -- 
+  db:priv_AddDB("RawMaterials", 206034); -- 
+  db:priv_AddDB("RawMaterials", 206035); -- 
   -- Blue
   db:priv_AddDB("RawMaterials", 202125); -- Aloeswood Fiber
   db:priv_AddDB("RawMaterials", 202117); -- Alpha Metal Stone
@@ -892,7 +896,6 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 202127); -- Tulipwood Fiber
   db:priv_AddDB("RawMaterials", 202109); -- Wooden Nail
   db:priv_AddDB("RawMaterials", 202122); -- Zeta Metal Stone
-  db:priv_AddDB("RawMaterials", 242065); -- Impeth Metal Stone
   db:priv_AddDB("RawMaterials", 242314); -- Siren Star
   db:priv_AddDB("RawMaterials", 242315); -- Tin Nail
   db:priv_AddDB("RawMaterials", 242316); -- Desny Metal Stone
@@ -925,6 +928,20 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 240411); -- White Iron Nail
   db:priv_AddDB("RawMaterials", 240412); -- Sigma Metal Stone
   db:priv_AddDB("RawMaterials", 240413); -- Palm Fiber
+  db:priv_AddDB("RawMaterials", 242063); -- Hebe
+  db:priv_AddDB("RawMaterials", 242064); -- Silver Nail
+  db:priv_AddDB("RawMaterials", 242065); -- Impeth Metal Stone
+  db:priv_AddDB("RawMaterials", 242066); -- Mulberry Fiber
+  db:priv_AddDB("RawMaterials", 241463); -- Star Of Discord
+  db:priv_AddDB("RawMaterials", 241464); -- Dark Silver Nail
+  db:priv_AddDB("RawMaterials", 241465); -- Ruite Metal Stone
+  db:priv_AddDB("RawMaterials", 241466); -- Ginkgo Fiber
+  db:priv_AddDB("RawMaterials", 206039); -- 
+  db:priv_AddDB("RawMaterials", 206040); -- 
+  db:priv_AddDB("RawMaterials", 206041); -- 
+  db:priv_AddDB("RawMaterials", 206039); -- 
+  db:priv_AddDB("RawMaterials", 206026); -- 
+  db:priv_AddDB("RawMaterials", 206027); -- 
   -- Green
   db:priv_AddDB("RawMaterials", 203015); -- Assassin's Sword Hilt
   db:priv_AddDB("RawMaterials", 203011); -- Broken Goblin Staff
@@ -940,6 +957,12 @@ local function priv_AddRawMaterials(db)
   db:priv_AddDB("RawMaterials", 203006); -- Very Low Rune Power
   db:priv_AddDB("RawMaterials", 203010); -- Worn Kobold Robe
   db:priv_AddDB("RawMaterials", 206028); -- Resilient Dragon Skin
+  db:priv_AddDB("RawMaterials", 206029); -- 
+  db:priv_AddDB("RawMaterials", 206030); -- 
+  db:priv_AddDB("RawMaterials", 206031); -- 
+  db:priv_AddDB("RawMaterials", 206036); -- 
+  db:priv_AddDB("RawMaterials", 206037); -- 
+  db:priv_AddDB("RawMaterials", 206038); -- 
   -- White
   db:priv_AddDB("RawMaterials", 201952); -- Alchemy Bottle
   db:priv_AddDB("RawMaterials", 203419); -- Animal Meat
