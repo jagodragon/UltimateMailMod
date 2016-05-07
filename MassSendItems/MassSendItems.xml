@@ -671,6 +671,18 @@
 		<Button name="$parentButton16" inherits="UMMMassSendItemsMarkButtonTemplate" id="16" />
         <!-- 6.4.1.2752 -->
         <Button name="$parentButton17" inherits="UMMMassSendItemsMarkButtonTemplate" id="17" />
+        <!-- 6.4.1.2769 -->
+        <Button name="$parentButton18" inherits="UMMMassSendItemsMarkButtonTemplate" id="18" /> <!--Rune Pet Eggs-->
+        <Button name="$parentButton19" inherits="UMMMassSendItemsMarkButtonTemplate" id="19" /> <!--Earth Pet Eggs-->
+        <Button name="$parentButton20" inherits="UMMMassSendItemsMarkButtonTemplate" id="20" /> <!--Water Pet Eggs-->
+        <Button name="$parentButton21" inherits="UMMMassSendItemsMarkButtonTemplate" id="21" /> <!--Fire Pet Eggs-->
+        <Button name="$parentButton22" inherits="UMMMassSendItemsMarkButtonTemplate" id="22" /> <!--Wind Pet Eggs-->
+        <Button name="$parentButton23" inherits="UMMMassSendItemsMarkButtonTemplate" id="23" /> <!--Light Pet Eggs-->
+        <Button name="$parentButton24" inherits="UMMMassSendItemsMarkButtonTemplate" id="24" /> <!--Dark Pet Eggs-->
+		<!-- Cenedril -->
+        <Button name="$parentButton25" inherits="UMMMassSendItemsMarkButtonTemplate" id="25" /> <!-- Dynamic -->
+        <Button name="$parentButton26" inherits="UMMMassSendItemsMarkButtonTemplate" id="26" /> <!-- Steadfast -->
+        <Button name="$parentButton27" inherits="UMMMassSendItemsMarkButtonTemplate" id="27" /> <!-- Mystical -->
     </Frames>
     <Scripts>
       <OnLoad>

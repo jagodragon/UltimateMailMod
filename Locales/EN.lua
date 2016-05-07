@@ -34,7 +34,7 @@ UMM_NOTIFY_TOOLTIP_MOVETIP          = "Shift+Right-mouse: move this icon.";
 UMM_MENU_TAB1                       = MAIL_INBOX; -- Game default string
 UMM_MENU_TAB2                       = MAIL_SENTMAIL; -- Game default string
 UMM_MENU_TAB3                       = "Mass Send Items";
-UMM_MENU_TAB4                       = "Mass Send Mail";
+-- UMM_MENU_TAB4                       = "Mass Send Mail";
 
 -- Tooltip specific
 UMM_TOOLTIP_BOUND                   = "Bound";
@@ -131,6 +131,16 @@ UMM_MSI_MARKBUTTON14                = "Blue Rec."; -- release 4.0.11.2531
 UMM_MSI_MARKBUTTON15                = "Magenta Rec."; -- release 4.0.11.2531
 UMM_MSI_MARKBUTTON16                = "Guild"; -- 5.0.0.2545
 UMM_MSI_MARKBUTTON17                = "Bag Stats"; -- 6.4.1.2753
+UMM_MSI_MARKBUTTON18                = "Rune Pets"; -- 6.4.1.2769
+UMM_MSI_MARKBUTTON19                = "Earth Pets"; -- 6.4.1.2769
+UMM_MSI_MARKBUTTON20                = "Water Pets"; -- 6.4.1.2769
+UMM_MSI_MARKBUTTON21                = "Fire Pets"; -- 6.4.1.2769
+UMM_MSI_MARKBUTTON22                = "Wind Pets"; -- 6.4.1.2769
+UMM_MSI_MARKBUTTON23                = "Light Pets"; -- 6.4.1.2769
+UMM_MSI_MARKBUTTON24                = "Dark Pets"; -- 6.4.1.2769
+UMM_MSI_MARKBUTTON25                = "Dyn.. Cen.."; -- Cenedril
+UMM_MSI_MARKBUTTON26                = "Std.. Cen.."; -- Cenedril
+UMM_MSI_MARKBUTTON27                = "Mys.. Cen.."; -- Cenedril
 
 UMM_MSI_MARK_LABEL                  = "Mark:";
 UMM_MSI_MARK_TOOLTIP1               = "Runes";
@@ -149,6 +159,17 @@ UMM_MSI_MARK_TOOLTIP13              = "Green Recipes"; -- release 4.0.11.2531
 UMM_MSI_MARK_TOOLTIP14              = "Blue Recipes"; -- release 4.0.11.2531
 UMM_MSI_MARK_TOOLTIP15              = "Magenta Recipes"; -- release 4.0.11.2531
 UMM_MSI_MARK_TOOLTIP16              = "Guild Contribution"; -- 5.0.0.2545
+UMM_MSI_MARK_TOOLTIP17              = "Bag Stat Items"; -- 5.0.0.2769
+UMM_MSI_MARK_TOOLTIP18              = "Rune Pet Eggs"; -- 6.4.1.2769
+UMM_MSI_MARK_TOOLTIP19              = "Earth Pet Eggs"; -- 6.4.1.2769
+UMM_MSI_MARK_TOOLTIP20              = "Water Pet Eggs"; -- 6.4.1.2769
+UMM_MSI_MARK_TOOLTIP21              = "Fire Pet Eggs"; -- 6.4.1.2769
+UMM_MSI_MARK_TOOLTIP22              = "Wind Pet Eggs"; -- 6.4.1.2769
+UMM_MSI_MARK_TOOLTIP23              = "Light Pet Eggs"; -- 6.4.1.2769
+UMM_MSI_MARK_TOOLTIP24              = "Dark Pet Eggs"; -- 6.4.1.2769
+UMM_MSI_MARK_TOOLTIP25              = "Dynamic Cenedril"; -- Cenedril
+UMM_MSI_MARK_TOOLTIP26              = "Steadfast Cenedril"; -- Cenedril
+UMM_MSI_MARK_TOOLTIP27              = "Mystical Cenedril"; -- Cenedril
 UMM_MSI_MARK_TOOLTIPCLICK           = "Click to mark all slots of items in this category.";
 
 UMM_MSI_BUTTON_ADDRESSEE            = "To:";

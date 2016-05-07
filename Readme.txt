@@ -3,7 +3,7 @@
  #                                                     #
  #  Ultimate Mail Mod (continued)                      #
  #                                                     #
- #  Version: 6.4.2.2758.006                            #
+ #  Version: 6.5.6.2774.008                            #
  #  By Jagodragon                                      #
  #                                                     #
  #     Maxeem of Muinin                                #
@@ -21,6 +21,20 @@ CHANGELOG:
 
 #Known issues
    *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.
+
+Version: 6.5.6.2774.008
+Release date: December 2 2015
+# Changes
+	*minor changes to backend
+	*added pet eggs buttons to mass send tab
+	*added Cenedril items to db separated by type
+	*added buttons for cenedril items to the mass send tab
+
+Version: 6.4.2.2769.007
+Release date: December 2 2015
+# Changes
+	*minor changes to backend
+	*added pet eggs to the db (separated by element not rarity)
 
 Version: 6.4.2.2758.005-6
 Release date: December 2 2015

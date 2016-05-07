@@ -69,6 +69,26 @@ local ResourceItemFilter = {
       result = "Guild";			-- release 5.0.0.2545
     elseif (id == 17) then    
       result = "BagStat";       -- release 6.4.1.2752
+    elseif (id == 18) then    
+      result = "RunePetEgg";       -- release 6.4.1.2769
+    elseif (id == 19) then    
+      result = "EarthPetEgg";       -- release 6.4.1.2769
+    elseif (id == 20) then    
+      result = "WaterPetEgg";       -- release 6.4.1.2769
+    elseif (id == 21) then    
+      result = "FirePetEgg";       -- release 6.4.1.2769
+    elseif (id == 22) then    
+      result = "WindPetEgg";       -- release 6.4.1.2769
+    elseif (id == 23) then    
+      result = "lightPetEgg";       -- release 6.4.1.2769
+    elseif (id == 24) then
+      result = "DarkPetEgg";       -- release 6.4.1.2769
+    elseif (id == 25) then
+      result = "DynamicCenedril";       -- release 6.4.1.2769
+    elseif (id == 26) then
+      result = "SteadfastCenedril";       -- release 6.4.1.2769
+    elseif (id == 27) then
+      result = "MysticalCenedril";       -- release 6.4.1.2769
     end
     return result;
   end;
@@ -1947,6 +1967,135 @@ local function priv_AddBagStats(db) -- 6.4.1.2752  -- credit Ultak
   
 end;
 
+local function priv_AddRunePetEggs(db) -- 6.4.1.2758
+  db:priv_AddDB("RunePetEgg", 204506); --Blue Rune Egg 6.4.1.2758
+  db:priv_AddDB("RunePetEgg", 204507); --Purple Rune Egg 6.4.1.2758
+  db:priv_AddDB("RunePetEgg", 204508); --orange Rune Egg 6.4.1.2758
+  db:priv_AddDB("RunePetEgg", 204509); --white Rune Egg 6.4.1.2758
+end;
+local function priv_AddEarthPetEggs(db) -- 6.4.1.2758
+  db:priv_AddDB("EarthPetEgg", 204476); --white 6.4.1.2758
+  db:priv_AddDB("EarthPetEgg", 204482); --Green 6.4.1.2758
+  db:priv_AddDB("EarthPetEgg", 204488); --Blue 6.4.1.2758
+  db:priv_AddDB("EarthPetEgg", 204494); --Purple 6.4.1.2758
+  db:priv_AddDB("EarthPetEgg", 204500); --orange 6.4.1.2758
+end;
+local function priv_AddWaterPetEggs(db) -- 6.4.1.2758
+  db:priv_AddDB("WaterPetEgg", 204477); --white 6.4.1.2758
+  db:priv_AddDB("WaterPetEgg", 204483); --Green 6.4.1.2758
+  db:priv_AddDB("WaterPetEgg", 204489); --Blue 6.4.1.2758
+  db:priv_AddDB("WaterPetEgg", 204495); --Purple 6.4.1.2758
+  db:priv_AddDB("WaterPetEgg", 204501); --orange 6.4.1.2758
+end;
+local function priv_AddFirePetEggs(db) -- 6.4.1.2758
+  db:priv_AddDB("FirePetEgg", 204478); --white 6.4.1.2758
+  db:priv_AddDB("FirePetEgg", 204484); --Green 6.4.1.2758
+  db:priv_AddDB("FirePetEgg", 204490); --Blue 6.4.1.2758
+  db:priv_AddDB("FirePetEgg", 204496); --Purple 6.4.1.2758
+  db:priv_AddDB("FirePetEgg", 204502); --orange 6.4.1.2758
+end;
+local function priv_AddWindPetEggs(db) -- 6.4.1.2758
+  db:priv_AddDB("WindPetEgg", 204479); --white 6.4.1.2758
+  db:priv_AddDB("WindPetEgg", 204485); --Green 6.4.1.2758
+  db:priv_AddDB("WindPetEgg", 204491); --Blue 6.4.1.2758
+  db:priv_AddDB("WindPetEgg", 204497); --Purple 6.4.1.2758
+  db:priv_AddDB("WindPetEgg", 204503); --orange 6.4.1.2758
+end;
+local function priv_AddLightPetEggs(db) -- 6.4.1.2758
+  db:priv_AddDB("lightPetEgg", 204480); --white 6.4.1.2758
+  db:priv_AddDB("lightPetEgg", 204486); --green 6.4.1.2758
+  db:priv_AddDB("lightPetEgg", 204492); --Blue 6.4.1.2758
+  db:priv_AddDB("lightPetEgg", 204498); --Purple 6.4.1.2758
+  db:priv_AddDB("lightPetEgg", 204504); --orange 6.4.1.2758
+end;
+local function priv_AddDarkPetEggs(db) -- 6.4.1.2758
+  db:priv_AddDB("DarkPetEgg", 204481); --white 6.4.1.2758
+  db:priv_AddDB("DarkPetEgg", 204487); --Green 6.4.1.2758
+  db:priv_AddDB("DarkPetEgg", 204493); --Blue 6.4.1.2758
+  db:priv_AddDB("DarkPetEgg", 204499); --Purple 6.4.1.2758
+  db:priv_AddDB("DarkPetEgg", 204505); --orange 6.4.1.2758
+end;
+-- Cenedril --
+local function priv_DynamicCenedril(db) -- 6.4.1.2758
+  db:priv_AddDB("DynamicCenedril", 209873); -- white mirror fragment
+  db:priv_AddDB("DynamicCenedril", 209876); -- white cenedril image piece
+  db:priv_AddDB("DynamicCenedril", 209879); -- white mirror ink
+  db:priv_AddDB("DynamicCenedril", 209882); -- white immage restoration scroll
+  db:priv_AddDB("DynamicCenedril", 209885); -- Green mirror fragment
+  db:priv_AddDB("DynamicCenedril", 209888); -- Green cenedril image piece
+  db:priv_AddDB("DynamicCenedril", 209891); -- Green mirror ink
+  db:priv_AddDB("DynamicCenedril", 209894); -- Green immage restoration scroll
+  db:priv_AddDB("DynamicCenedril", 209897); -- Blue mirror fragment
+  db:priv_AddDB("DynamicCenedril", 209900); -- Blue cenedril image piece
+  db:priv_AddDB("DynamicCenedril", 209903); -- Blue mirror ink
+  db:priv_AddDB("DynamicCenedril", 209906); -- Blue immage restoration scroll
+  db:priv_AddDB("DynamicCenedril", 209909); -- Purple mirror fragment
+  db:priv_AddDB("DynamicCenedril", 209912); -- Purple cenedril image piece
+  db:priv_AddDB("DynamicCenedril", 209915); -- Purple mirror ink
+  db:priv_AddDB("DynamicCenedril", 209918); -- Purple immage restoration scroll
+  db:priv_AddDB("DynamicCenedril", 209921); -- Orange mirror fragment
+  db:priv_AddDB("DynamicCenedril", 209924); -- Orange cenedril image piece
+  db:priv_AddDB("DynamicCenedril", 209927); -- Orange mirror ink
+  db:priv_AddDB("DynamicCenedril", 209930); -- Orange immage restoration scroll
+  db:priv_AddDB("DynamicCenedril", 209933); -- Brown mirror fragment
+  db:priv_AddDB("DynamicCenedril", 209936); -- Brown cenedril image piece
+  db:priv_AddDB("DynamicCenedril", 209939); -- Brown mirror ink
+  db:priv_AddDB("DynamicCenedril", 209942); -- Brown immage restoration scroll
+end;
+local function priv_SteadfastCenedril(db) -- 6.4.1.2758
+  db:priv_AddDB("SteadfastCenedril", 209874); -- white mirror fragment
+  db:priv_AddDB("SteadfastCenedril", 209877); -- white cenedril image piece
+  db:priv_AddDB("SteadfastCenedril", 209880); -- white mirror ink
+  db:priv_AddDB("SteadfastCenedril", 209883); -- white immage restoration scroll
+  db:priv_AddDB("SteadfastCenedril", 209886); -- Green mirror fragment
+  db:priv_AddDB("SteadfastCenedril", 209889); -- Green cenedril image piece
+  db:priv_AddDB("SteadfastCenedril", 209892); -- Green mirror ink
+  db:priv_AddDB("SteadfastCenedril", 209895); -- Green immage restoration scroll
+  db:priv_AddDB("SteadfastCenedril", 209898); -- Blue mirror fragment
+  db:priv_AddDB("SteadfastCenedril", 209901); -- Blue cenedril image piece
+  db:priv_AddDB("SteadfastCenedril", 209904); -- Blue mirror ink
+  db:priv_AddDB("SteadfastCenedril", 209907); -- Blue immage restoration scroll
+  db:priv_AddDB("SteadfastCenedril", 209910); -- Purple mirror fragment
+  db:priv_AddDB("SteadfastCenedril", 209913); -- Purple cenedril image piece
+  db:priv_AddDB("SteadfastCenedril", 209916); -- Purple mirror ink
+  db:priv_AddDB("SteadfastCenedril", 209919); -- Purple immage restoration scroll
+  db:priv_AddDB("SteadfastCenedril", 209922); -- Orange mirror fragment
+  db:priv_AddDB("SteadfastCenedril", 209925); -- Orange cenedril image piece
+  db:priv_AddDB("SteadfastCenedril", 209928); -- Orange mirror ink
+  db:priv_AddDB("SteadfastCenedril", 209931); -- Orange immage restoration scroll
+  db:priv_AddDB("SteadfastCenedril", 209934); -- Brown mirror fragment
+  db:priv_AddDB("SteadfastCenedril", 209937); -- Brown cenedril image piece
+  db:priv_AddDB("SteadfastCenedril", 209940); -- Brown mirror ink
+  db:priv_AddDB("SteadfastCenedril", 209943); -- Brown immage restoration scroll
+end;
+local function priv_MysticalCenedril(db) -- 6.4.1.2758
+  db:priv_AddDB("MysticalCenedril", 209875); -- white mirror fragment
+  db:priv_AddDB("MysticalCenedril", 209878); -- white cenedril image piece
+  db:priv_AddDB("MysticalCenedril", 209881); -- white mirror ink
+  db:priv_AddDB("MysticalCenedril", 209884); -- white immage restoration scroll
+  db:priv_AddDB("MysticalCenedril", 209887); -- Green mirror fragment
+  db:priv_AddDB("MysticalCenedril", 209890); -- Green cenedril image piece
+  db:priv_AddDB("MysticalCenedril", 209893); -- Green mirror ink
+  db:priv_AddDB("MysticalCenedril", 209896); -- Green immage restoration scroll
+  db:priv_AddDB("MysticalCenedril", 209899); -- Blue mirror fragment
+  db:priv_AddDB("MysticalCenedril", 209902); -- Blue cenedril image piece
+  db:priv_AddDB("MysticalCenedril", 209905); -- Blue mirror ink
+  db:priv_AddDB("MysticalCenedril", 209908); -- Blue immage restoration scroll
+  db:priv_AddDB("MysticalCenedril", 209911); -- Purple mirror fragment
+  db:priv_AddDB("MysticalCenedril", 209914); -- Purple cenedril image piece
+  db:priv_AddDB("MysticalCenedril", 209917); -- Purple mirror ink
+  db:priv_AddDB("MysticalCenedril", 209920); -- Purple immage restoration scroll
+  db:priv_AddDB("MysticalCenedril", 209923); -- Orange mirror fragment
+  db:priv_AddDB("MysticalCenedril", 209926); -- Orange cenedril image piece
+  db:priv_AddDB("MysticalCenedril", 209929); -- Orange mirror ink
+  db:priv_AddDB("MysticalCenedril", 209932); -- Orange immage restoration scroll
+  db:priv_AddDB("MysticalCenedril", 209935); -- Brown mirror fragment
+  db:priv_AddDB("MysticalCenedril", 209938); -- Brown cenedril image piece
+  db:priv_AddDB("MysticalCenedril", 209941); -- Brown mirror ink
+  db:priv_AddDB("MysticalCenedril", 209944); -- Brown immage restoration scroll
+end;
+
+
 UMMItemDB = ResourceItemFilter;
 UMMItemDB:Init();
 
@@ -1972,3 +2121,17 @@ priv_AddBagStats(UMMItemDB); -- 6.4.1.2752 -- credit Ultak
 priv_AddJuwels(UMMItemDB);
 priv_AddRunes(UMMItemDB);
 priv_AddFusionStones(UMMItemDB);
+
+--pet eggs  -- 6.4.1.2758
+priv_AddRunePetEggs(UMMItemDB);-- 6.4.1.2758
+priv_AddEarthPetEggs(UMMItemDB);-- 6.4.1.2758
+priv_AddWaterPetEggs(UMMItemDB);-- 6.4.1.2758
+priv_AddFirePetEggs(UMMItemDB);-- 6.4.1.2758
+priv_AddWindPetEggs(UMMItemDB);-- 6.4.1.2758
+priv_AddLightPetEggs(UMMItemDB);-- 6.4.1.2758
+priv_AddDarkPetEggs(UMMItemDB);-- 6.4.1.2758
+
+-- Cenedril
+priv_DynamicCenedril(UMMItemDB);
+priv_SteadfastCenedril(UMMItemDB);
+priv_MysticalCenedril(UMMItemDB);
