@@ -21,7 +21,13 @@ CHANGELOG:
 
 #Known issues
    *  Sending more than 60 mails at one time, can cause some Glitchyness with the interface.
+   *  having item preview turned on while statrating is installed will cause the time on new mail to set for 3days on mousover
 
+Version: 6.5.6.2774.009
+Release date: December 2 2015
+# Changes
+	*Temporarily set item preview to off by default
+	
 Version: 6.5.6.2774.008
 Release date: December 2 2015
 # Changes
