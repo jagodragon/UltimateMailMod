@@ -37,6 +37,8 @@ UMMSettings = {
       UMMConfig.Settings = {};
       self:Set("AudioWarning", true);
       self:Set("DeleteDelay", 1.0);
+      self:Set("CheckTooltipDisplay", true);
+      self:Set("CheckTakeDeleteEmpty", true);
     end
     if (UMMConfig.NewMail == nil) then
       UMMConfig.NewMail = {};

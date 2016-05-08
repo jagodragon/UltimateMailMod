@@ -201,6 +201,16 @@ function UMMInboxTOCTemplate_OnShow(this)
   else
     getglobal(this:GetParent():GetName().."Tools"):Show();
   end
+	if (UMMConfig.Settings.CheckTooltipDisplay == true) then
+	  getglobal(this:GetName().."CheckTooltipDisplay"):SetChecked(true);
+	else
+	  getglobal(this:GetName().."CheckTooltipDisplay"):SetChecked(false);
+	end
+	if (UMMConfig.Settings.CheckTakeDeleteEmpty == true) then
+	  getglobal(this:GetName().."CheckTakeDeleteEmpty"):SetChecked(true);
+	else
+	  getglobal(this:GetName().."CheckTakeDeleteEmpty"):SetChecked(false);
+	end
 end
 
 function UMMInboxTOCTemplate_OnHide(this)
@@ -345,12 +355,30 @@ function UMMInboxToolsTemplate_OnLoad(this)
     getglobal(self:GetName().."TotalMoney"):Hide();
     getglobal(self:GetName().."TotalDiamonds"):Hide();
     
-    self:SetOption(1);
-    getglobal(self:GetName().."CheckTooltipDisplay"):SetChecked(false);								-- release 5.0.1.2550
-    getglobal(self:GetName().."CheckTakeDeleteEmpty"):SetChecked(true);
+	self:SetOption(1);
+    -- getglobal(self:GetName().."CheckTooltipDisplay"):SetChecked(false);								-- release 5.0.1.2550
+	-- getglobal(self:GetName().."CheckTakeDeleteEmpty"):SetChecked(true);
+	if (UMMConfig.Settings.CheckTooltipDisplay == true) then
+	  getglobal(this:GetName().."CheckTooltipDisplay"):SetChecked(true);
+	else
+	  getglobal(this:GetName().."CheckTooltipDisplay"):SetChecked(false);
+	end
+	if (UMMConfig.Settings.CheckTakeDeleteEmpty == true) then
+	  getglobal(this:GetName().."CheckTakeDeleteEmpty"):SetChecked(true);
+	else
+	  getglobal(this:GetName().."CheckTakeDeleteEmpty"):SetChecked(false);
+	end
     getglobal(self:GetName().."ButtonReturn"):Disable();
     getglobal(self:GetName().."ButtonDelete"):Disable();
   end;
+	
+	this.CheckSetting = function(self, checkBox, entry)
+	  if (checkBox:IsChecked()) then
+	    UMMSettings:Set(entry, true);
+	  else
+	    UMMSettings:Set(entry, false);
+	  end
+    end;
   
   this:InitView();
   

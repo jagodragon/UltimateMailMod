@@ -24,12 +24,12 @@ CHANGELOG:
    *  having item preview turned on while statrating is installed will cause the time on new mail to set for 3days on mousover
 
 Version: 6.5.6.2774.009
-Release date: December 2 2015
+Release date: May 8 2016
 # Changes
 	*Temporarily set item preview to off by default
 	
 Version: 6.5.6.2774.008
-Release date: December 2 2015
+Release date: May 7 2016
 # Changes
 	*minor changes to backend
 	*added pet eggs buttons to mass send tab
@@ -37,7 +37,7 @@ Release date: December 2 2015
 	*added buttons for cenedril items to the mass send tab
 
 Version: 6.4.2.2769.007
-Release date: December 2 2015
+Release date: May 7 2016
 # Changes
 	*minor changes to backend
 	*added pet eggs to the db (separated by element not rarity)

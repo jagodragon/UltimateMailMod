@@ -367,6 +367,11 @@
             </FontString>
           </Layer>
         </Layers>
+        <Scripts>
+          <OnClick>
+            this:GetParent():CheckSetting(this, "CheckTakeDeleteEmpty");
+          </OnClick>
+        </Scripts>
       </CheckButton>
 	  <!-- Insert Checkbox to enable/disable the Tooltip Display -->
 	  <!-- Version 5.0.1.2550 -->
@@ -397,6 +402,11 @@
             </FontString>
           </Layer>
         </Layers>
+        <Scripts>
+          <OnClick>
+            this:GetParent():CheckSetting(this, "CheckTooltipDisplay");
+          </OnClick>
+        </Scripts>
       </CheckButton>
 	  <!-- end -->
 
